@@ -1,0 +1,11 @@
+# chadcn-ux
+
+> Day-one CLI for chadcn. Requires Node.js 22+.
+
+- [Agent guide](https://github.com/jasonkneen/chadcn/blob/main/packages/cli/AGENTS.md)
+- [CLI README](https://github.com/jasonkneen/chadcn/blob/main/packages/cli/README.md)
+- [Website and catalog](https://chadcn.dev)
+
+Commands: init, add, view, search. Installation delegates to shadcn 4.21.0.
+Bare names use its default registry; registry URLs and namespaces pass through.
+Private workspace compositions are not yet distributed. WebMCP is not implemented.

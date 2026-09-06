@@ -1,0 +1,17 @@
+{
+  "name": "chadcn-ux",
+  "version": "0.1.0",
+  "description": "The chadcn CLI for installing UI components and registry items.",
+  "type": "module",
+  "bin": { "chadcn-ux": "bin/chadcn-ux.mjs" },
+  "files": ["bin", "README.md", "LICENSE", "AGENTS.md", "llms.txt"],
+  "engines": { "node": ">=22" },
+  "license": "MIT",
+  "homepage": "https://chadcn.dev",
+  "repository": { "type": "git", "url": "git+https://github.com/jasonkneen/chadcn.git", "directory": "packages/cli" },
+  "bugs": { "url": "https://github.com/jasonkneen/chadcn/issues" },
+  "keywords": ["chadcn", "shadcn", "ui", "components", "registry", "cli"],
+  "publishConfig": { "access": "public", "registry": "https://registry.npmjs.org/" },
+  "scripts": { "test": "node --test test/*.test.mjs" },
+  "dependencies": { "shadcn": "4.21.0" }
+}

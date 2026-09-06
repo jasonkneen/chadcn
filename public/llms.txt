@@ -1,0 +1,41 @@
+# chadcn
+
+> A day-one interface library for people and coding agents: components, blocks,
+> registry variants, themes, and interactive app demos. https://chadcn.dev
+
+## Start here
+
+- [Project README](https://github.com/jasonkneen/chadcn#readme): overview, status, and screenshot.
+- [Agent instructions](https://github.com/jasonkneen/chadcn/blob/main/AGENTS.md): consumer and contributor contract.
+- [CLI documentation](https://github.com/jasonkneen/chadcn/blob/main/packages/cli/README.md): supported commands.
+- [Workspace guide](https://github.com/jasonkneen/chadcn/blob/main/docs/workspace.md): upstream checkouts and generated adapters.
+- [Components](https://chadcn.dev/?view=components): individual controls.
+- [Blocks](https://chadcn.dev/?view=blocks): compositions of controls.
+- [Apps](https://chadcn.dev/?view=apps): complete interface demonstrations.
+- [Documentation](https://chadcn.dev/?view=documentation): source-library profiles.
+
+## CLI
+
+Package and executable: chadcn-ux. Node.js 22 or later.
+First release prepared; npm publication pending authentication.
+After publication:
+
+    npx chadcn-ux init
+    npx chadcn-ux view button
+    npx chadcn-ux add button --dry-run
+    npx chadcn-ux add button card
+
+Installation delegates to a pinned shadcn CLI. Bare names select its default
+registry. Explicit registry URLs or configured @namespace/item references select
+other providers. init, add, view, and search pass options through unchanged.
+Check components.json and inspect changes before overwriting existing components.
+
+## Important limits
+
+Catalog inclusion does not mean a component can be installed independently.
+@chadcn/ui and @chadcn/upstream-* are private workspace packages, not public npm
+dependencies. Keep duplicate registry variants distinct. Preserve source licenses.
+App demos include local interactions; email delivery and AI services are not connected.
+Base, Ocean, Rose, Terminal, Rounded Neo Brutal, Classic Brutal, Atelier, and Blueprint
+are supported skins, with light, dark, and system modes.
+WebMCP and scheduled example generation are planned, not implemented.
