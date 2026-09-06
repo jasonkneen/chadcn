@@ -1,0 +1,13 @@
+[build]
+  base = "deploy"
+  command = "cd .. && node scripts/netlify-build.mjs"
+  publish = "../dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NPM_FLAGS = "--legacy-peer-deps"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

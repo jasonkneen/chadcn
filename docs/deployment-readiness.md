@@ -6,6 +6,8 @@ Typechecking and all 13 unit tests passed during the launch check. The fresh pro
 
 Netlify CLI is authenticated to jasonkneen’s team, with agensis.io and tinyworld.build among its 49 projects. This checkout is not yet linked to a Netlify project. The requested domain spelling needs confirming before DNS changes.
 
-For the first launch, build on the configured local workstation and upload static output. A clean remote build is not yet established: generated upstream packages are ignored, the Vue alias uses a sibling checkout, and dependency setup relies on the local runtime installation. Do not assume a standard npm ci build works on a fresh host.
+Netlify project `chadcn-library` is connected to the private GitHub repository `jasonkneen/chadcn`, with production branch `main` and custom domain `chadcn.dev`. The build uses `deploy/package-lock.json`, fetches the upstream revisions recorded in `sources.lock.json`, generates adapters, and builds both Vite entry points. `netlify.toml` configures the install base, command, publish directory, and SPA fallback. A successful hosted build and DNS cutover still require verification.
+
+The deploy key is read-only. GitHub push and pull-request webhooks trigger deployments. Local Netlify state and installed dependencies remain ignored.
 
 The four apps are interactive demonstrations. Email delivery and real AI services are not connected. Public shadcn add distribution is not implemented. The first-party component inventory and JSON UI format research are available as documentation; inventory candidates have not all been extracted into distributable packages.
