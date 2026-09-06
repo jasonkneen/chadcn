@@ -1,0 +1,1068 @@
+[
+  {
+    "id": "shadcn",
+    "name": "shadcn",
+    "description": "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code.",
+    "variant": null,
+    "repository": "https://github.com/shadcn-ui/ui",
+    "homepage": "https://ui.shadcn.com",
+    "documentation": "https://ui.shadcn.com",
+    "screenshot": "/library-screenshots/shadcn.jpg",
+    "screenshotAt": "2026-09-06T10:17:15.421Z",
+    "owner": "shadcn-ui",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/139895814?v=4",
+    "createdAt": "2023-01-04T12:43:27Z",
+    "creator": "shadcn",
+    "firstCommit": {
+      "sha": "0a241be17ffe07cf21cc72702feb1aea852ef571",
+      "date": "2023-01-24T19:51:29+04:00",
+      "author": "shadcn",
+      "title": "feat: initial commit"
+    },
+    "license": "MIT",
+    "stars": 123160,
+    "forks": 10119,
+    "issues": 1962,
+    "language": "TypeScript",
+    "topics": [
+      "base-ui",
+      "components",
+      "laravel",
+      "nextjs",
+      "radix-ui",
+      "react",
+      "react-aria",
+      "react-aria-components",
+      "shadcn",
+      "tailwindcss",
+      "tanstack",
+      "ui",
+      "vite"
+    ],
+    "archived": false,
+    "defaultBranch": "main",
+    "framework": "react",
+    "kind": "registry",
+    "itemCount": 411,
+    "packagedCount": 394,
+    "localCommit": "7c9eaba1c0a6404c990c144a654792e3313c650d",
+    "commits": [
+      {
+        "sha": "4dbe072997507545dbf648ab45662d9c1e5b5b56",
+        "title": "feat: add quiz-ui registry to directory json (#11753)",
+        "date": "2026-09-06T09:23:10Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/4dbe072997507545dbf648ab45662d9c1e5b5b56"
+      },
+      {
+        "sha": "eb7a58539fd8e9ec002c1330062fa1c77f6bf318",
+        "title": "Replace @aliimam with @designali in directory.json (#11765)",
+        "date": "2026-09-06T09:22:45Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/eb7a58539fd8e9ec002c1330062fa1c77f6bf318"
+      },
+      {
+        "sha": "c2a25d45ebc43b2431784bfa1e8e4b0e7dfe8f70",
+        "title": "fix: update sona ui registry domain (#11764)",
+        "date": "2026-09-06T09:08:42Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/c2a25d45ebc43b2431784bfa1e8e4b0e7dfe8f70"
+      },
+      {
+        "sha": "7c9eaba1c0a6404c990c144a654792e3313c650d",
+        "title": "chore(release): version packages (#11759)",
+        "date": "2026-09-04T05:31:26Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/7c9eaba1c0a6404c990c144a654792e3313c650d"
+      },
+      {
+        "sha": "c257f688cf4de7ec10cc1be84cad29cd4631182c",
+        "title": "feat(registry): migrate registry, templates and CLI to cn (#11758)",
+        "date": "2026-09-04T05:21:22Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/c257f688cf4de7ec10cc1be84cad29cd4631182c"
+      },
+      {
+        "sha": "8720dec73f5aebed9f649ea58636f54599fdedf1",
+        "title": "refactor(cli): use twMerge from cn instead of tailwind-merge internally",
+        "date": "2026-09-03T19:26:16Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/8720dec73f5aebed9f649ea58636f54599fdedf1"
+      }
+    ],
+    "fetchedAt": "2026-09-06T10:17:15.421Z"
+  },
+  {
+    "id": "blocks",
+    "name": "blocks",
+    "description": "An open-source library of UI blocks. Built with React, Tailwind and shadcn/ui",
+    "variant": null,
+    "repository": "https://github.com/ephraimduncan/blocks",
+    "homepage": "https://blocks.so",
+    "documentation": "https://blocks.so",
+    "screenshot": "/library-screenshots/blocks.jpg",
+    "screenshotAt": "2026-09-06T10:17:15.421Z",
+    "owner": "ephraimduncan",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/55143799?v=4",
+    "createdAt": "2025-03-21T15:25:08Z",
+    "creator": null,
+    "firstCommit": {
+      "sha": "520202f90f722b55f464084b05fee0fe5c7a5b12",
+      "date": "2025-03-21T12:53:25Z",
+      "author": "Ephraim Atta-Duncan",
+      "title": "Initial commit from Create Next App"
+    },
+    "license": "MIT",
+    "stars": 1788,
+    "forks": 158,
+    "issues": 3,
+    "language": "TypeScript",
+    "topics": [],
+    "archived": false,
+    "defaultBranch": "main",
+    "framework": "react",
+    "kind": "registry",
+    "itemCount": 80,
+    "packagedCount": 80,
+    "localCommit": "78cd7a3777c055415d18f2d2c69846abac94052c",
+    "commits": [
+      {
+        "sha": "78cd7a3777c055415d18f2d2c69846abac94052c",
+        "title": "Merge pull request #89 from ephraimduncan/feat/chat-03-application",
+        "date": "2026-09-05T06:55:22Z",
+        "url": "https://github.com/ephraimduncan/blocks/commit/78cd7a3777c055415d18f2d2c69846abac94052c"
+      },
+      {
+        "sha": "b35d1a141d2015642605fcfd26c313fbd45b215e",
+        "title": "chore: add agentation overlay to preview layout",
+        "date": "2026-09-04T16:34:35Z",
+        "url": "https://github.com/ephraimduncan/blocks/commit/b35d1a141d2015642605fcfd26c313fbd45b215e"
+      },
+      {
+        "sha": "c494741716acf76002cb5934bbef14cc9c75a8cb",
+        "title": "feat(chat-03): stream replies as jittered token chunks",
+        "date": "2026-09-04T16:32:55Z",
+        "url": "https://github.com/ephraimduncan/blocks/commit/c494741716acf76002cb5934bbef14cc9c75a8cb"
+      },
+      {
+        "sha": "25b55e87053c212efd5e1f57596a7cb21c488fb3",
+        "title": "feat(chat-03): show per-message day dividers",
+        "date": "2026-09-04T16:32:55Z",
+        "url": "https://github.com/ephraimduncan/blocks/commit/25b55e87053c212efd5e1f57596a7cb21c488fb3"
+      },
+      {
+        "sha": "3bc06aebed4eb0e3e71faed12ae2fe7fb4770b06",
+        "title": "feat(chat-03): update model list and add vendor logos",
+        "date": "2026-09-04T16:32:55Z",
+        "url": "https://github.com/ephraimduncan/blocks/commit/3bc06aebed4eb0e3e71faed12ae2fe7fb4770b06"
+      },
+      {
+        "sha": "b6a6fdb2bc1b478223d9705b191f18116789261a",
+        "title": "fix(chat-03): hide thread date while actions are visible",
+        "date": "2026-09-04T16:32:50Z",
+        "url": "https://github.com/ephraimduncan/blocks/commit/b6a6fdb2bc1b478223d9705b191f18116789261a"
+      }
+    ],
+    "fetchedAt": "2026-09-06T10:17:15.421Z"
+  },
+  {
+    "id": "kibo",
+    "name": "kibo",
+    "description": "A custom registry of composable, accessible and extensible components designed for use with shadcn/ui. Free and open source, forever.",
+    "variant": null,
+    "repository": "https://github.com/shadcnblocks/kibo",
+    "homepage": "https://www.kibo-ui.com/",
+    "documentation": "https://www.kibo-ui.com",
+    "screenshot": "/library-screenshots/kibo.jpg",
+    "screenshotAt": "2026-09-06T10:17:15.421Z",
+    "owner": "shadcnblocks",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/180819838?v=4",
+    "createdAt": "2024-08-25T03:39:07Z",
+    "creator": null,
+    "firstCommit": {
+      "sha": "1d70fcc94a7b32f88e76604a5ecc1780f4efb21a",
+      "date": "2025-01-19T16:34:28-05:00",
+      "author": "Hayden Bleasel",
+      "title": "Initial commit"
+    },
+    "license": "MIT",
+    "stars": 3922,
+    "forks": 178,
+    "issues": 34,
+    "language": "TypeScript",
+    "topics": [
+      "accessible",
+      "components",
+      "composable",
+      "react",
+      "shadcn-ui",
+      "typescript",
+      "ui"
+    ],
+    "archived": false,
+    "defaultBranch": "main",
+    "framework": "react",
+    "kind": "packages",
+    "itemCount": 40,
+    "packagedCount": 40,
+    "localCommit": "3d63cdb15b79d972e3dc38a10997987672f9b263",
+    "commits": [
+      {
+        "sha": "3d63cdb15b79d972e3dc38a10997987672f9b263",
+        "title": "docs: replace shields.io badges with shieldcn badges (#315)",
+        "date": "2026-05-04T06:00:08Z",
+        "url": "https://github.com/shadcnblocks/kibo/commit/3d63cdb15b79d972e3dc38a10997987672f9b263"
+      },
+      {
+        "sha": "aad4018d53a79712d721f3377e671ba49b41dca1",
+        "title": "add plausible analytics (#312)",
+        "date": "2026-03-09T12:43:06Z",
+        "url": "https://github.com/shadcnblocks/kibo/commit/aad4018d53a79712d721f3377e671ba49b41dca1"
+      },
+      {
+        "sha": "a79b3b37884707d08ccd382eb4acee0edfd52078",
+        "title": "Blocks (#311)",
+        "date": "2026-03-09T12:02:02Z",
+        "url": "https://github.com/shadcnblocks/kibo/commit/a79b3b37884707d08ccd382eb4acee0edfd52078"
+      },
+      {
+        "sha": "b20d906a488f8664f447e190ff0d786c4831ba0d",
+        "title": "fix homepage alignment",
+        "date": "2026-03-08T06:22:03Z",
+        "url": "https://github.com/shadcnblocks/kibo/commit/b20d906a488f8664f447e190ff0d786c4831ba0d"
+      },
+      {
+        "sha": "492393f48c5e7aa36641d7779360698b8f957616",
+        "title": "Update fumadocs and nextjs versions (#310)",
+        "date": "2026-03-08T05:47:33Z",
+        "url": "https://github.com/shadcnblocks/kibo/commit/492393f48c5e7aa36641d7779360698b8f957616"
+      },
+      {
+        "sha": "603595178df9324cd1f6e7960c9db87cff4e593d",
+        "title": "update to react 19.2.1 (#302)",
+        "date": "2025-12-04T02:02:55Z",
+        "url": "https://github.com/shadcnblocks/kibo/commit/603595178df9324cd1f6e7960c9db87cff4e593d"
+      }
+    ],
+    "fetchedAt": "2026-09-06T10:17:15.421Z"
+  },
+  {
+    "id": "shadcn-base",
+    "name": "shadcn / Base UI",
+    "description": "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code.",
+    "variant": "Base UI",
+    "repository": "https://github.com/shadcn-ui/ui",
+    "homepage": "https://ui.shadcn.com",
+    "documentation": "https://ui.shadcn.com/docs/components/base",
+    "screenshot": "/library-screenshots/shadcn.jpg",
+    "screenshotAt": "2026-09-06T10:17:15.421Z",
+    "owner": "shadcn-ui",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/139895814?v=4",
+    "createdAt": "2023-01-04T12:43:27Z",
+    "creator": "shadcn",
+    "firstCommit": {
+      "sha": "0a241be17ffe07cf21cc72702feb1aea852ef571",
+      "date": "2023-01-24T19:51:29+04:00",
+      "author": "shadcn",
+      "title": "feat: initial commit"
+    },
+    "license": "MIT",
+    "stars": 123160,
+    "forks": 10119,
+    "issues": 1962,
+    "language": "TypeScript",
+    "topics": [
+      "base-ui",
+      "components",
+      "laravel",
+      "nextjs",
+      "radix-ui",
+      "react",
+      "react-aria",
+      "react-aria-components",
+      "shadcn",
+      "tailwindcss",
+      "tanstack",
+      "ui",
+      "vite"
+    ],
+    "archived": false,
+    "defaultBranch": "main",
+    "framework": "react",
+    "kind": "registry-tree",
+    "itemCount": 162,
+    "packagedCount": 161,
+    "localCommit": "7c9eaba1c0a6404c990c144a654792e3313c650d",
+    "commits": [
+      {
+        "sha": "4dbe072997507545dbf648ab45662d9c1e5b5b56",
+        "title": "feat: add quiz-ui registry to directory json (#11753)",
+        "date": "2026-09-06T09:23:10Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/4dbe072997507545dbf648ab45662d9c1e5b5b56"
+      },
+      {
+        "sha": "eb7a58539fd8e9ec002c1330062fa1c77f6bf318",
+        "title": "Replace @aliimam with @designali in directory.json (#11765)",
+        "date": "2026-09-06T09:22:45Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/eb7a58539fd8e9ec002c1330062fa1c77f6bf318"
+      },
+      {
+        "sha": "c2a25d45ebc43b2431784bfa1e8e4b0e7dfe8f70",
+        "title": "fix: update sona ui registry domain (#11764)",
+        "date": "2026-09-06T09:08:42Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/c2a25d45ebc43b2431784bfa1e8e4b0e7dfe8f70"
+      },
+      {
+        "sha": "7c9eaba1c0a6404c990c144a654792e3313c650d",
+        "title": "chore(release): version packages (#11759)",
+        "date": "2026-09-04T05:31:26Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/7c9eaba1c0a6404c990c144a654792e3313c650d"
+      },
+      {
+        "sha": "c257f688cf4de7ec10cc1be84cad29cd4631182c",
+        "title": "feat(registry): migrate registry, templates and CLI to cn (#11758)",
+        "date": "2026-09-04T05:21:22Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/c257f688cf4de7ec10cc1be84cad29cd4631182c"
+      },
+      {
+        "sha": "8720dec73f5aebed9f649ea58636f54599fdedf1",
+        "title": "refactor(cli): use twMerge from cn instead of tailwind-merge internally",
+        "date": "2026-09-03T19:26:16Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/8720dec73f5aebed9f649ea58636f54599fdedf1"
+      }
+    ],
+    "fetchedAt": "2026-09-06T10:17:15.421Z"
+  },
+  {
+    "id": "shadcn-radix",
+    "name": "shadcn / Radix UI",
+    "description": "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code.",
+    "variant": "Radix UI",
+    "repository": "https://github.com/shadcn-ui/ui",
+    "homepage": "https://ui.shadcn.com",
+    "documentation": "https://ui.shadcn.com/docs/components/radix",
+    "screenshot": "/library-screenshots/shadcn.jpg",
+    "screenshotAt": "2026-09-06T10:17:15.421Z",
+    "owner": "shadcn-ui",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/139895814?v=4",
+    "createdAt": "2023-01-04T12:43:27Z",
+    "creator": "shadcn",
+    "firstCommit": {
+      "sha": "0a241be17ffe07cf21cc72702feb1aea852ef571",
+      "date": "2023-01-24T19:51:29+04:00",
+      "author": "shadcn",
+      "title": "feat: initial commit"
+    },
+    "license": "MIT",
+    "stars": 123160,
+    "forks": 10119,
+    "issues": 1962,
+    "language": "TypeScript",
+    "topics": [
+      "base-ui",
+      "components",
+      "laravel",
+      "nextjs",
+      "radix-ui",
+      "react",
+      "react-aria",
+      "react-aria-components",
+      "shadcn",
+      "tailwindcss",
+      "tanstack",
+      "ui",
+      "vite"
+    ],
+    "archived": false,
+    "defaultBranch": "main",
+    "framework": "react",
+    "kind": "registry-tree",
+    "itemCount": 160,
+    "packagedCount": 159,
+    "localCommit": "7c9eaba1c0a6404c990c144a654792e3313c650d",
+    "commits": [
+      {
+        "sha": "4dbe072997507545dbf648ab45662d9c1e5b5b56",
+        "title": "feat: add quiz-ui registry to directory json (#11753)",
+        "date": "2026-09-06T09:23:10Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/4dbe072997507545dbf648ab45662d9c1e5b5b56"
+      },
+      {
+        "sha": "eb7a58539fd8e9ec002c1330062fa1c77f6bf318",
+        "title": "Replace @aliimam with @designali in directory.json (#11765)",
+        "date": "2026-09-06T09:22:45Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/eb7a58539fd8e9ec002c1330062fa1c77f6bf318"
+      },
+      {
+        "sha": "c2a25d45ebc43b2431784bfa1e8e4b0e7dfe8f70",
+        "title": "fix: update sona ui registry domain (#11764)",
+        "date": "2026-09-06T09:08:42Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/c2a25d45ebc43b2431784bfa1e8e4b0e7dfe8f70"
+      },
+      {
+        "sha": "7c9eaba1c0a6404c990c144a654792e3313c650d",
+        "title": "chore(release): version packages (#11759)",
+        "date": "2026-09-04T05:31:26Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/7c9eaba1c0a6404c990c144a654792e3313c650d"
+      },
+      {
+        "sha": "c257f688cf4de7ec10cc1be84cad29cd4631182c",
+        "title": "feat(registry): migrate registry, templates and CLI to cn (#11758)",
+        "date": "2026-09-04T05:21:22Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/c257f688cf4de7ec10cc1be84cad29cd4631182c"
+      },
+      {
+        "sha": "8720dec73f5aebed9f649ea58636f54599fdedf1",
+        "title": "refactor(cli): use twMerge from cn instead of tailwind-merge internally",
+        "date": "2026-09-03T19:26:16Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/8720dec73f5aebed9f649ea58636f54599fdedf1"
+      }
+    ],
+    "fetchedAt": "2026-09-06T10:17:15.421Z"
+  },
+  {
+    "id": "shadcn-aria",
+    "name": "shadcn / React Aria",
+    "description": "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code.",
+    "variant": "React Aria",
+    "repository": "https://github.com/shadcn-ui/ui",
+    "homepage": "https://ui.shadcn.com",
+    "documentation": "https://ui.shadcn.com/docs/components/aria",
+    "screenshot": "/library-screenshots/shadcn.jpg",
+    "screenshotAt": "2026-09-06T10:17:15.421Z",
+    "owner": "shadcn-ui",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/139895814?v=4",
+    "createdAt": "2023-01-04T12:43:27Z",
+    "creator": "shadcn",
+    "firstCommit": {
+      "sha": "0a241be17ffe07cf21cc72702feb1aea852ef571",
+      "date": "2023-01-24T19:51:29+04:00",
+      "author": "shadcn",
+      "title": "feat: initial commit"
+    },
+    "license": "MIT",
+    "stars": 123160,
+    "forks": 10119,
+    "issues": 1962,
+    "language": "TypeScript",
+    "topics": [
+      "base-ui",
+      "components",
+      "laravel",
+      "nextjs",
+      "radix-ui",
+      "react",
+      "react-aria",
+      "react-aria-components",
+      "shadcn",
+      "tailwindcss",
+      "tanstack",
+      "ui",
+      "vite"
+    ],
+    "archived": false,
+    "defaultBranch": "main",
+    "framework": "react",
+    "kind": "registry-tree",
+    "itemCount": 156,
+    "packagedCount": 155,
+    "localCommit": "7c9eaba1c0a6404c990c144a654792e3313c650d",
+    "commits": [
+      {
+        "sha": "4dbe072997507545dbf648ab45662d9c1e5b5b56",
+        "title": "feat: add quiz-ui registry to directory json (#11753)",
+        "date": "2026-09-06T09:23:10Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/4dbe072997507545dbf648ab45662d9c1e5b5b56"
+      },
+      {
+        "sha": "eb7a58539fd8e9ec002c1330062fa1c77f6bf318",
+        "title": "Replace @aliimam with @designali in directory.json (#11765)",
+        "date": "2026-09-06T09:22:45Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/eb7a58539fd8e9ec002c1330062fa1c77f6bf318"
+      },
+      {
+        "sha": "c2a25d45ebc43b2431784bfa1e8e4b0e7dfe8f70",
+        "title": "fix: update sona ui registry domain (#11764)",
+        "date": "2026-09-06T09:08:42Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/c2a25d45ebc43b2431784bfa1e8e4b0e7dfe8f70"
+      },
+      {
+        "sha": "7c9eaba1c0a6404c990c144a654792e3313c650d",
+        "title": "chore(release): version packages (#11759)",
+        "date": "2026-09-04T05:31:26Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/7c9eaba1c0a6404c990c144a654792e3313c650d"
+      },
+      {
+        "sha": "c257f688cf4de7ec10cc1be84cad29cd4631182c",
+        "title": "feat(registry): migrate registry, templates and CLI to cn (#11758)",
+        "date": "2026-09-04T05:21:22Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/c257f688cf4de7ec10cc1be84cad29cd4631182c"
+      },
+      {
+        "sha": "8720dec73f5aebed9f649ea58636f54599fdedf1",
+        "title": "refactor(cli): use twMerge from cn instead of tailwind-merge internally",
+        "date": "2026-09-03T19:26:16Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/8720dec73f5aebed9f649ea58636f54599fdedf1"
+      }
+    ],
+    "fetchedAt": "2026-09-06T10:17:15.421Z"
+  },
+  {
+    "id": "magicui",
+    "name": "magicui",
+    "description": "UI Library for Design Engineers. Animated components and effects you can copy and paste into your apps. Free. Open Source.",
+    "variant": null,
+    "repository": "https://github.com/magicuidesign/magicui",
+    "homepage": "https://magicui.design",
+    "documentation": "https://magicui.design",
+    "screenshot": "/library-screenshots/magicui.jpg",
+    "screenshotAt": "2026-09-06T10:17:15.421Z",
+    "owner": "magicuidesign",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/166878038?v=4",
+    "createdAt": "2023-06-26T19:17:10Z",
+    "creator": null,
+    "firstCommit": {
+      "sha": "9e5fd2177c06e137635cd8d547d2fca850f7334b",
+      "date": "2023-06-17T01:20:33-04:00",
+      "author": "Dillion Verma",
+      "title": "Initial commit from Create Next App"
+    },
+    "license": "MIT",
+    "stars": 22182,
+    "forks": 1118,
+    "issues": 0,
+    "language": "MDX",
+    "topics": [
+      "components",
+      "framer-motion",
+      "nextjs",
+      "react",
+      "shadcn-ui",
+      "tailwindcss",
+      "typescript"
+    ],
+    "archived": false,
+    "defaultBranch": "main",
+    "framework": "react",
+    "kind": "registry",
+    "itemCount": 207,
+    "packagedCount": 206,
+    "localCommit": "8e56d60ac8ef49b856623f7c3eeafa2df8459410",
+    "commits": [
+      {
+        "sha": "1246d6d404c556f03867fc6d447f2867eee8a42b",
+        "title": "chore(www): drop 4 unused dependencies and a dead tsconfig, align @types/node with Node 22 (#1009)",
+        "date": "2026-09-05T04:38:29Z",
+        "url": "https://github.com/magicuidesign/magicui/commit/1246d6d404c556f03867fc6d447f2867eee8a42b"
+      },
+      {
+        "sha": "979d3d1c441baaecce76256f55fa8d44f6528f5c",
+        "title": "fix(registry): correct smooth-cursor dependency (framer-motion -> motion) (#1008)",
+        "date": "2026-09-05T02:36:15Z",
+        "url": "https://github.com/magicuidesign/magicui/commit/979d3d1c441baaecce76256f55fa8d44f6528f5c"
+      },
+      {
+        "sha": "7f260302299754c50bc5cb8900f1cd5fb4638bd4",
+        "title": "feat(floating-3d-particles): add canvas-based 3d particle background (#1002)",
+        "date": "2026-09-04T13:02:35Z",
+        "url": "https://github.com/magicuidesign/magicui/commit/7f260302299754c50bc5cb8900f1cd5fb4638bd4"
+      },
+      {
+        "sha": "2d671cc6c0e0f40e28682c9cbddd16694dcfe627",
+        "title": "fix(animated-theme-toggler): prevent compositor crashes (#996)",
+        "date": "2026-08-11T14:09:34Z",
+        "url": "https://github.com/magicuidesign/magicui/commit/2d671cc6c0e0f40e28682c9cbddd16694dcfe627"
+      },
+      {
+        "sha": "5543371f99eaa6d1549a8dec864e78ee0b4515f2",
+        "title": "feat(showcase): add imiles.me (#995)",
+        "date": "2026-08-09T14:15:01Z",
+        "url": "https://github.com/magicuidesign/magicui/commit/5543371f99eaa6d1549a8dec864e78ee0b4515f2"
+      },
+      {
+        "sha": "0bd8b9fe0e15c4697c8d22dee1d35d88b5152c25",
+        "title": "ci: make PR check failures self-explanatory and document CI gates (#994)",
+        "date": "2026-07-31T15:24:16Z",
+        "url": "https://github.com/magicuidesign/magicui/commit/0bd8b9fe0e15c4697c8d22dee1d35d88b5152c25"
+      }
+    ],
+    "fetchedAt": "2026-09-06T10:17:15.421Z"
+  },
+  {
+    "id": "ai-elements",
+    "name": "ai-elements",
+    "description": "AI Elements is a component library and custom registry built on top of shadcn/ui to help you build AI-native applications faster.",
+    "variant": null,
+    "repository": "https://github.com/vercel/ai-elements",
+    "homepage": "https://elements.ai-sdk.dev",
+    "documentation": "https://elements.ai-sdk.dev",
+    "screenshot": "/library-screenshots/ai-elements.jpg",
+    "screenshotAt": "2026-09-06T10:17:15.421Z",
+    "owner": "vercel",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/14985020?v=4",
+    "createdAt": "2025-08-15T19:37:48Z",
+    "creator": null,
+    "firstCommit": {
+      "sha": "c54948890f5990ea4d30659b546e18339067c761",
+      "date": "2025-08-15T12:22:06-07:00",
+      "author": "Turbobot",
+      "title": "feat(create-turbo): apply official-starter transform"
+    },
+    "license": "Apache-2.0",
+    "stars": 2405,
+    "forks": 274,
+    "issues": 95,
+    "language": "TypeScript",
+    "topics": [
+      "ai",
+      "elements",
+      "shadcn-ui",
+      "vercel"
+    ],
+    "archived": false,
+    "defaultBranch": "main",
+    "framework": "react",
+    "kind": "tree",
+    "itemCount": 37,
+    "packagedCount": 37,
+    "localCommit": "ba34adc2eea643d0962e0401b4b3f4eb60bbfd1a",
+    "commits": [
+      {
+        "sha": "6a9d5b1822ffb10bba4bd97175f01edd7d8651cd",
+        "title": "Add question component for choices and freeform responses (#479)",
+        "date": "2026-08-21T14:44:34Z",
+        "url": "https://github.com/vercel/ai-elements/commit/6a9d5b1822ffb10bba4bd97175f01edd7d8651cd"
+      },
+      {
+        "sha": "0c1f5e8c75273f0e95c8faa031544a8aa2bb1a5b",
+        "title": "fix(skills): replace fake tokens with obvious placeholders (#447)",
+        "date": "2026-07-09T08:17:32Z",
+        "url": "https://github.com/vercel/ai-elements/commit/0c1f5e8c75273f0e95c8faa031544a8aa2bb1a5b"
+      },
+      {
+        "sha": "038f4f7a7216d0396103d975391f68cf9fd35724",
+        "title": "chore(docs): remove next images config (#436)",
+        "date": "2026-05-27T19:53:52Z",
+        "url": "https://github.com/vercel/ai-elements/commit/038f4f7a7216d0396103d975391f68cf9fd35724"
+      },
+      {
+        "sha": "55c4e9d4b41f86b3d7b51ce0164148806d4b671b",
+        "title": "Bump pnpm/action-setup from 4 to 6 (#427)",
+        "date": "2026-05-27T16:30:33Z",
+        "url": "https://github.com/vercel/ai-elements/commit/55c4e9d4b41f86b3d7b51ce0164148806d4b671b"
+      },
+      {
+        "sha": "f18f7bfe6be8b19d63f1f340b2d6e5e0bf3a166e",
+        "title": "Update confirmation.tsx (#435)",
+        "date": "2026-05-27T16:18:19Z",
+        "url": "https://github.com/vercel/ai-elements/commit/f18f7bfe6be8b19d63f1f340b2d6e5e0bf3a166e"
+      },
+      {
+        "sha": "9ab9c715d6e87cd7f5b9a0cf2ae284e56f6acef9",
+        "title": "Add AI agent detection via @vercel/agent-readability (#421)",
+        "date": "2026-04-07T12:23:35Z",
+        "url": "https://github.com/vercel/ai-elements/commit/9ab9c715d6e87cd7f5b9a0cf2ae284e56f6acef9"
+      }
+    ],
+    "fetchedAt": "2026-09-06T10:17:15.421Z"
+  },
+  {
+    "id": "assistant-ui",
+    "name": "assistant-ui",
+    "description": "Typescript/React Library for AI Chat",
+    "variant": null,
+    "repository": "https://github.com/assistant-ui/assistant-ui",
+    "homepage": "https://www.assistant-ui.com",
+    "documentation": "https://assistant-ui.com",
+    "screenshot": "/library-screenshots/assistant-ui.jpg",
+    "screenshotAt": "2026-09-06T10:17:15.421Z",
+    "owner": "assistant-ui",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/189563271?v=4",
+    "createdAt": "2023-11-22T16:01:17Z",
+    "creator": null,
+    "firstCommit": {
+      "sha": "3964b8d7a3453d261427b781f9f48197741e5db0",
+      "date": "2024-04-21T13:35:32-07:00",
+      "author": "Simon Farshid",
+      "title": "Initial commit"
+    },
+    "license": "MIT",
+    "stars": 12026,
+    "forks": 1168,
+    "issues": 92,
+    "language": "TypeScript",
+    "topics": [
+      "ai-chatbot",
+      "base-ui",
+      "chatbot",
+      "conversational-ai",
+      "copilot",
+      "radix-ui",
+      "react-chatbot",
+      "shadcn",
+      "ui-components",
+      "vercel-ai-sdk"
+    ],
+    "archived": false,
+    "defaultBranch": "main",
+    "framework": "react",
+    "kind": "npm",
+    "itemCount": 1,
+    "packagedCount": 0,
+    "localCommit": "26a4654d33bc2632459d84ac72cc4e98fbade205",
+    "commits": [
+      {
+        "sha": "37eaa1951a5ea393e50058cff5d48933b206f192",
+        "title": "fix(ai-sdk): preserve approval metadata during conversion (#6866)",
+        "date": "2026-09-06T09:59:26Z",
+        "url": "https://github.com/assistant-ui/assistant-ui/commit/37eaa1951a5ea393e50058cff5d48933b206f192"
+      },
+      {
+        "sha": "fc6bed8bdcb08197fadbd5f44d0181db7b519f10",
+        "title": "fix(python): detach initial state and tuple-nested containers (#6923)",
+        "date": "2026-09-06T09:56:22Z",
+        "url": "https://github.com/assistant-ui/assistant-ui/commit/fc6bed8bdcb08197fadbd5f44d0181db7b519f10"
+      },
+      {
+        "sha": "071a879e9b03d28e092dfa35623dcbbc4ff107e3",
+        "title": "fix(core): preserve tap attachment removal errors (#6920)",
+        "date": "2026-09-06T09:50:03Z",
+        "url": "https://github.com/assistant-ui/assistant-ui/commit/071a879e9b03d28e092dfa35623dcbbc4ff107e3"
+      },
+      {
+        "sha": "e64dad4ddfc37144874917fa3d4b3fa68edbf9d4",
+        "title": "test(react): cover MCP app size forwarding (#6921)",
+        "date": "2026-09-06T09:32:42Z",
+        "url": "https://github.com/assistant-ui/assistant-ui/commit/e64dad4ddfc37144874917fa3d4b3fa68edbf9d4"
+      },
+      {
+        "sha": "961d9e0b848cf9c73879fe564f14779bf2e616f9",
+        "title": "fix(examples): release already-aborted pi event streams (#6878)",
+        "date": "2026-09-06T09:32:40Z",
+        "url": "https://github.com/assistant-ui/assistant-ui/commit/961d9e0b848cf9c73879fe564f14779bf2e616f9"
+      },
+      {
+        "sha": "afe6697e2f115c6a741512035d8f57262a15639a",
+        "title": "fix(opencode): count patch files by full path (#6886)",
+        "date": "2026-09-06T09:04:55Z",
+        "url": "https://github.com/assistant-ui/assistant-ui/commit/afe6697e2f115c6a741512035d8f57262a15639a"
+      }
+    ],
+    "fetchedAt": "2026-09-06T10:17:15.421Z"
+  },
+  {
+    "id": "ai-elements-vue",
+    "name": "ai-elements-vue",
+    "description": "AI Elements Vue is a component library built on top of shadcn-vue to help you build AI-native applications faster.",
+    "variant": null,
+    "repository": "https://github.com/vuepont/ai-elements-vue",
+    "homepage": "https://www.ai-elements-vue.com",
+    "documentation": "https://www.ai-elements-vue.com",
+    "screenshot": "/library-screenshots/ai-elements-vue.jpg",
+    "screenshotAt": "2026-09-06T10:17:15.421Z",
+    "owner": "vuepont",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/241883587?v=4",
+    "createdAt": "2025-08-27T02:07:11Z",
+    "creator": null,
+    "firstCommit": {
+      "sha": "770037e9c139c7da23479ee720ba087c316d1e5e",
+      "date": "2025-09-01T22:06:34+08:00",
+      "author": "cwandev",
+      "title": "chore: init"
+    },
+    "license": "Apache-2.0",
+    "stars": 1170,
+    "forks": 97,
+    "issues": 8,
+    "language": "Vue",
+    "topics": [
+      "ai",
+      "chatbot",
+      "elements",
+      "shadcn-vue",
+      "ui",
+      "vercel",
+      "vue-components"
+    ],
+    "archived": false,
+    "defaultBranch": "main",
+    "framework": "vue",
+    "kind": "directory",
+    "itemCount": 1,
+    "packagedCount": 0,
+    "localCommit": "c3a4bfae090c7a62bf399c15e0bf46123ee95bd3",
+    "commits": [
+      {
+        "sha": "ad4818f6081a2fe6e5b7bb53cebc5a66d9a24148",
+        "title": "docs: add apimart sponsor (#186)",
+        "date": "2026-08-28T06:46:26Z",
+        "url": "https://github.com/vuepont/ai-elements-vue/commit/ad4818f6081a2fe6e5b7bb53cebc5a66d9a24148"
+      },
+      {
+        "sha": "4a49e973f30ecbe483e9435468f6aa87bc611a94",
+        "title": "chore: release v1.5.2",
+        "date": "2026-07-28T03:40:34Z",
+        "url": "https://github.com/vuepont/ai-elements-vue/commit/4a49e973f30ecbe483e9435468f6aa87bc611a94"
+      },
+      {
+        "sha": "39fc81e2a914b0b36dc3111714de7bb9f115becd",
+        "title": "fix(model-selector): scroll to selected model when reopening selector (#177)",
+        "date": "2026-07-27T09:21:30Z",
+        "url": "https://github.com/vuepont/ai-elements-vue/commit/39fc81e2a914b0b36dc3111714de7bb9f115becd"
+      },
+      {
+        "sha": "9d7e96cae17dc024d7fde256e5bb80e0f5c7072e",
+        "title": "fix(examples): use ConversationEmptyState icon slot in conversation demo (#185)",
+        "date": "2026-07-27T08:42:06Z",
+        "url": "https://github.com/vuepont/ai-elements-vue/commit/9d7e96cae17dc024d7fde256e5bb80e0f5c7072e"
+      },
+      {
+        "sha": "e9540aa45e58233203260a054be1e385eca3e35c",
+        "title": "ci: enable npm trusted publishing with OIDC (#184)",
+        "date": "2026-07-22T14:46:18Z",
+        "url": "https://github.com/vuepont/ai-elements-vue/commit/e9540aa45e58233203260a054be1e385eca3e35c"
+      },
+      {
+        "sha": "361331c46503fe49a23368ed708ef385d1e4825e",
+        "title": "chore: release v1.5.1",
+        "date": "2026-07-16T05:32:12Z",
+        "url": "https://github.com/vuepont/ai-elements-vue/commit/361331c46503fe49a23368ed708ef385d1e4825e"
+      }
+    ],
+    "fetchedAt": "2026-09-06T10:17:15.421Z"
+  },
+  {
+    "id": "shadcn-cssinjs",
+    "name": "shadcn-cssinjs",
+    "description": "CSS-in-JS port of shadcn/ui, built on StyleX",
+    "variant": null,
+    "repository": "https://github.com/shadcn-labs/shadcn-cssinjs",
+    "homepage": "https://shadcn-cssinjs.com",
+    "documentation": "https://github.com/shadcn-labs/shadcn-cssinjs",
+    "screenshot": "/library-screenshots/shadcn-cssinjs.jpg",
+    "screenshotAt": "2026-09-06T10:17:15.421Z",
+    "owner": "shadcn-labs",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/278042933?v=4",
+    "createdAt": "2026-06-11T09:44:17Z",
+    "creator": null,
+    "firstCommit": {
+      "sha": "2269ff6909c887383628795f879cd9405da7ca4f",
+      "date": "2026-06-11T15:14:21+05:30",
+      "author": "Aniket Pawar",
+      "title": "Initial commit"
+    },
+    "license": "MIT",
+    "stars": 107,
+    "forks": 6,
+    "issues": 44,
+    "language": "TypeScript",
+    "topics": [
+      "base-ui",
+      "components",
+      "css-in-js",
+      "react",
+      "shadcn",
+      "shadcn-ui",
+      "ui"
+    ],
+    "archived": false,
+    "defaultBranch": "main",
+    "framework": "react",
+    "kind": "registry",
+    "itemCount": 56,
+    "packagedCount": 56,
+    "localCommit": "5f0337ee4606f5d6c8f3cb2cb95924c8a70e9a5f",
+    "commits": [
+      {
+        "sha": "489698127738a785557619def292f1f2f6e98ffb",
+        "title": "refactor: simplify hotkey usage in haptic and sound toggle hooks",
+        "date": "2026-09-03T21:06:04Z",
+        "url": "https://github.com/shadcn-labs/shadcn-cssinjs/commit/489698127738a785557619def292f1f2f6e98ffb"
+      },
+      {
+        "sha": "379233167ae456d9e5d8044aebb05bd3db63faee",
+        "title": "fix: update navigation links to include UTM parameters",
+        "date": "2026-09-03T12:44:34Z",
+        "url": "https://github.com/shadcn-labs/shadcn-cssinjs/commit/379233167ae456d9e5d8044aebb05bd3db63faee"
+      },
+      {
+        "sha": "e542da860a8847421420d4ee2bb263d4408f04a2",
+        "title": "feat: add sponsors page and update navigation",
+        "date": "2026-09-03T12:43:18Z",
+        "url": "https://github.com/shadcn-labs/shadcn-cssinjs/commit/e542da860a8847421420d4ee2bb263d4408f04a2"
+      },
+      {
+        "sha": "18c52a0208d84c3929147f7c4fa5279eca679bd7",
+        "title": "Merge pull request #3 from shadcn-labs/feat/homepage-cards",
+        "date": "2026-09-02T19:53:52Z",
+        "url": "https://github.com/shadcn-labs/shadcn-cssinjs/commit/18c52a0208d84c3929147f7c4fa5279eca679bd7"
+      },
+      {
+        "sha": "880efa58319a3265a35026164ac8ed1e73d22fb4",
+        "title": "feat: enhance card components and introduce new features",
+        "date": "2026-09-02T19:51:56Z",
+        "url": "https://github.com/shadcn-labs/shadcn-cssinjs/commit/880efa58319a3265a35026164ac8ed1e73d22fb4"
+      },
+      {
+        "sha": "828e2d57151d050643112f39c3c816189ba82000",
+        "title": "Merge branch 'main' into feat/homepage-cards",
+        "date": "2026-09-02T18:32:09Z",
+        "url": "https://github.com/shadcn-labs/shadcn-cssinjs/commit/828e2d57151d050643112f39c3c816189ba82000"
+      }
+    ],
+    "fetchedAt": "2026-09-06T10:17:15.421Z"
+  },
+  {
+    "id": "shadcn-directory",
+    "name": "shadcn-directory",
+    "description": "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code.",
+    "variant": null,
+    "repository": "https://github.com/shadcn-ui/ui",
+    "homepage": "https://ui.shadcn.com",
+    "documentation": "https://ui.shadcn.com/docs/directory",
+    "screenshot": "/library-screenshots/shadcn.jpg",
+    "screenshotAt": "2026-09-06T10:17:15.421Z",
+    "owner": "shadcn-ui",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/139895814?v=4",
+    "createdAt": "2023-01-04T12:43:27Z",
+    "creator": null,
+    "firstCommit": null,
+    "license": "MIT",
+    "stars": 123160,
+    "forks": 10119,
+    "issues": 1962,
+    "language": "TypeScript",
+    "topics": [
+      "base-ui",
+      "components",
+      "laravel",
+      "nextjs",
+      "radix-ui",
+      "react",
+      "react-aria",
+      "react-aria-components",
+      "shadcn",
+      "tailwindcss",
+      "tanstack",
+      "ui",
+      "vite"
+    ],
+    "archived": false,
+    "defaultBranch": "main",
+    "framework": "react",
+    "kind": "directory",
+    "itemCount": 292,
+    "packagedCount": 0,
+    "localCommit": null,
+    "commits": [
+      {
+        "sha": "4dbe072997507545dbf648ab45662d9c1e5b5b56",
+        "title": "feat: add quiz-ui registry to directory json (#11753)",
+        "date": "2026-09-06T09:23:10Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/4dbe072997507545dbf648ab45662d9c1e5b5b56"
+      },
+      {
+        "sha": "eb7a58539fd8e9ec002c1330062fa1c77f6bf318",
+        "title": "Replace @aliimam with @designali in directory.json (#11765)",
+        "date": "2026-09-06T09:22:45Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/eb7a58539fd8e9ec002c1330062fa1c77f6bf318"
+      },
+      {
+        "sha": "c2a25d45ebc43b2431784bfa1e8e4b0e7dfe8f70",
+        "title": "fix: update sona ui registry domain (#11764)",
+        "date": "2026-09-06T09:08:42Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/c2a25d45ebc43b2431784bfa1e8e4b0e7dfe8f70"
+      },
+      {
+        "sha": "7c9eaba1c0a6404c990c144a654792e3313c650d",
+        "title": "chore(release): version packages (#11759)",
+        "date": "2026-09-04T05:31:26Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/7c9eaba1c0a6404c990c144a654792e3313c650d"
+      },
+      {
+        "sha": "c257f688cf4de7ec10cc1be84cad29cd4631182c",
+        "title": "feat(registry): migrate registry, templates and CLI to cn (#11758)",
+        "date": "2026-09-04T05:21:22Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/c257f688cf4de7ec10cc1be84cad29cd4631182c"
+      },
+      {
+        "sha": "8720dec73f5aebed9f649ea58636f54599fdedf1",
+        "title": "refactor(cli): use twMerge from cn instead of tailwind-merge internally",
+        "date": "2026-09-03T19:26:16Z",
+        "url": "https://github.com/shadcn-ui/ui/commit/8720dec73f5aebed9f649ea58636f54599fdedf1"
+      }
+    ],
+    "fetchedAt": "2026-09-06T10:17:15.421Z"
+  },
+  {
+    "id": "awesome-shadcn-ui",
+    "name": "awesome-shadcn-ui",
+    "description": "A curated list of awesome things related to shadcn/ui.",
+    "variant": null,
+    "repository": "https://github.com/birobirobiro/awesome-shadcn-ui",
+    "homepage": "https://awesomeshadcn.dev/",
+    "documentation": "https://awesomeshadcn.dev",
+    "screenshot": "/library-screenshots/awesome-shadcn-ui.jpg",
+    "screenshotAt": "2026-09-06T10:17:15.421Z",
+    "owner": "birobirobiro",
+    "ownerAvatar": "https://avatars.githubusercontent.com/u/22185823?v=4",
+    "createdAt": "2024-02-05T19:48:57Z",
+    "creator": null,
+    "firstCommit": null,
+    "license": "MIT",
+    "stars": 20454,
+    "forks": 1272,
+    "issues": 42,
+    "language": "TypeScript",
+    "topics": [
+      "awesome",
+      "awesome-list",
+      "list",
+      "open-source",
+      "resources",
+      "shad",
+      "shadcn",
+      "shadcn-ui"
+    ],
+    "archived": false,
+    "defaultBranch": "main",
+    "framework": "react",
+    "kind": "directory",
+    "itemCount": 468,
+    "packagedCount": 0,
+    "localCommit": null,
+    "commits": [
+      {
+        "sha": "41731543001906e664eeee7908403a8482f894c2",
+        "title": "Update GitHub star counts",
+        "date": "2026-08-31T03:21:11Z",
+        "url": "https://github.com/birobirobiro/awesome-shadcn-ui/commit/41731543001906e664eeee7908403a8482f894c2"
+      },
+      {
+        "sha": "7417bbeae2d214b0991fa49b4a42d2844fa0c54b",
+        "title": "Update GitHub star counts",
+        "date": "2026-08-24T03:57:39Z",
+        "url": "https://github.com/birobirobiro/awesome-shadcn-ui/commit/7417bbeae2d214b0991fa49b4a42d2844fa0c54b"
+      },
+      {
+        "sha": "85891816d43fdcdcb9b0c4706786d60eafab48d3",
+        "title": "Update GitHub star counts",
+        "date": "2026-08-17T03:22:59Z",
+        "url": "https://github.com/birobirobiro/awesome-shadcn-ui/commit/85891816d43fdcdcb9b0c4706786d60eafab48d3"
+      },
+      {
+        "sha": "7b31a00a99318b00abeabd50f742a891629541c4",
+        "title": "Add dates to new resources",
+        "date": "2026-08-11T14:58:08Z",
+        "url": "https://github.com/birobirobiro/awesome-shadcn-ui/commit/7b31a00a99318b00abeabd50f742a891629541c4"
+      },
+      {
+        "sha": "e9039e36d3b466737e34879c764bd4ddb4c4a408",
+        "title": "Added Shadcn Store (#561)",
+        "date": "2026-08-11T14:57:49Z",
+        "url": "https://github.com/birobirobiro/awesome-shadcn-ui/commit/e9039e36d3b466737e34879c764bd4ddb4c4a408"
+      },
+      {
+        "sha": "a2be54562fd586e33403ba00cf1a6f86a70e01c5",
+        "title": "fix(ci): fail the build on entries with no usable link",
+        "date": "2026-08-11T14:47:06Z",
+        "url": "https://github.com/birobirobiro/awesome-shadcn-ui/commit/a2be54562fd586e33403ba00cf1a6f86a70e01c5"
+      }
+    ],
+    "fetchedAt": "2026-09-06T10:17:15.421Z"
+  }
+]

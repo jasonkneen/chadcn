@@ -1,0 +1,157 @@
+{
+  "sources": [
+    {
+      "id": "shadcn",
+      "path": "../ui",
+      "repository": "https://github.com/shadcn-ui/ui",
+      "kind": "registry",
+      "root": "apps/v4",
+      "registry": "apps/v4/registry.json",
+      "aliases": {
+        "@/registry/new-york-v4/": "registry/new-york-v4/",
+        "@/": ""
+      },
+      "homepage": "https://ui.shadcn.com",
+      "assets": {
+        "style-nova.css": "apps/v4/registry/styles/style-nova.css",
+        "tailwind.css": "packages/shadcn/src/tailwind.css"
+      }
+    },
+    {
+      "id": "blocks",
+      "path": "../blocks",
+      "repository": "https://github.com/ephraimduncan/blocks",
+      "kind": "registry",
+      "root": "",
+      "registry": "public/r/registry.json",
+      "aliases": {
+        "@/": ""
+      },
+      "homepage": "https://blocks.so"
+    },
+    {
+      "id": "kibo",
+      "path": "../kibo",
+      "repository": "https://github.com/shadcnblocks/kibo",
+      "kind": "packages",
+      "root": "packages",
+      "aliases": {
+        "@/": "shadcn-ui/",
+        "@repo/": ""
+      },
+      "homepage": "https://www.kibo-ui.com"
+    },
+    {
+      "id": "shadcn-base",
+      "variant": "Base UI",
+      "path": "../ui",
+      "repository": "https://github.com/shadcn-ui/ui",
+      "kind": "registry-tree",
+      "root": "apps/v4",
+      "entryRoot": "registry/bases/base",
+      "aliases": {
+        "@/registry/bases/base/": "registry/bases/base/",
+        "@/": "",
+        "@/app/(app)/create/": "app/(app)/(create)/",
+        "@/app/(create)/": "app/(app)/(create)/"
+      },
+      "homepage": "https://ui.shadcn.com/docs/components/base",
+      "icons": "lucide"
+    },
+    {
+      "id": "shadcn-radix",
+      "variant": "Radix UI",
+      "path": "../ui",
+      "repository": "https://github.com/shadcn-ui/ui",
+      "kind": "registry-tree",
+      "root": "apps/v4",
+      "entryRoot": "registry/bases/radix",
+      "aliases": {
+        "@/registry/bases/radix/": "registry/bases/radix/",
+        "@/": "",
+        "@/app/(app)/create/": "app/(app)/(create)/",
+        "@/app/(create)/": "app/(app)/(create)/"
+      },
+      "homepage": "https://ui.shadcn.com/docs/components/radix",
+      "icons": "lucide"
+    },
+    {
+      "id": "shadcn-aria",
+      "variant": "React Aria",
+      "path": "../ui",
+      "repository": "https://github.com/shadcn-ui/ui",
+      "kind": "registry-tree",
+      "root": "apps/v4",
+      "entryRoot": "registry/bases/aria",
+      "aliases": {
+        "@/registry/bases/aria/": "registry/bases/aria/",
+        "@/": "",
+        "@/app/(app)/create/": "app/(app)/(create)/",
+        "@/app/(create)/": "app/(app)/(create)/"
+      },
+      "homepage": "https://ui.shadcn.com/docs/components/aria",
+      "icons": "lucide"
+    },
+    {
+      "id": "magicui",
+      "path": "../magicui",
+      "repository": "https://github.com/magicuidesign/magicui",
+      "kind": "registry",
+      "root": "apps/www",
+      "registry": "apps/www/registry.json",
+      "aliases": {
+        "@/lib/utils": "registry/lib/utils",
+        "@/": ""
+      },
+      "homepage": "https://magicui.design"
+    },
+    {
+      "id": "ai-elements",
+      "path": "../ai-elements",
+      "repository": "https://github.com/vercel/ai-elements",
+      "kind": "tree",
+      "root": "packages",
+      "entryRoot": "elements/src",
+      "aliases": {
+        "@/components/ui/": "shadcn-ui/components/ui/",
+        "@/lib/": "shadcn-ui/lib/",
+        "@/components/ai-elements/": "elements/src/",
+        "@repo/": ""
+      },
+      "homepage": "https://elements.ai-sdk.dev"
+    },
+    {
+      "id": "assistant-ui",
+      "path": "../assistant-ui",
+      "repository": "https://github.com/assistant-ui/assistant-ui",
+      "kind": "npm",
+      "package": "@assistant-ui/react",
+      "homepage": "https://assistant-ui.com"
+    },
+    {
+      "id": "ai-elements-vue",
+      "path": "../ai-elements-vue",
+      "repository": "https://github.com/vuepont/ai-elements-vue",
+      "kind": "directory",
+      "framework": "vue",
+      "homepage": "https://www.ai-elements-vue.com"
+    },
+    {
+      "id": "shadcn-cssinjs",
+      "path": "../shadcn-cssinjs",
+      "repository": "https://github.com/shadcn-labs/shadcn-cssinjs",
+      "kind": "registry",
+      "root": "apps/www",
+      "registry": "apps/www/registry.json",
+      "aliases": {
+        "@/": ""
+      },
+      "homepage": "https://github.com/shadcn-labs/shadcn-cssinjs"
+    }
+  ],
+  "discovery": {
+    "repository": "birobirobiro/awesome-shadcn-ui",
+    "url": "https://raw.githubusercontent.com/birobirobiro/awesome-shadcn-ui/main/README.md",
+    "cache": "data/awesome-shadcn-ui.md"
+  }
+}

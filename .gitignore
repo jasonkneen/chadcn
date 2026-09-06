@@ -1,0 +1,40 @@
+# Dependencies and generated upstream adapters
+node_modules/
+/packages/upstream-*/
+
+# Build output and local generation/cache state
+/dist/
+/.cache/
+/.generated/
+*.tsbuildinfo
+
+# Hosting CLI state
+/.netlify/
+/.vercel/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+/sources.local.json
+.npmrc.local
+
+# Browser evidence, test reports, and logs
+/artifacts/
+/.playwright-mcp/
+/playwright-report/
+/test-results/
+/coverage/
+*.log
+
+# OS and editor files
+.DS_Store
+._*
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

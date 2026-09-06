@@ -1,0 +1,9 @@
+{
+ "name":"@chadcn/ui",
+ "version":"0.1.0",
+ "private":true,
+ "type":"module",
+ "exports":{"./collection-card":"./src/collection-card.tsx"},
+ "dependencies":{"@chadcn/upstream-shadcn":"0.0.0","@chadcn/upstream-kibo":"0.0.0"},
+ "peerDependencies":{"react":"^19.2.0","react-dom":"^19.2.0"}
+}

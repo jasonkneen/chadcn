@@ -1,0 +1,28 @@
+import { useState } from 'react';
+import { Alert, AlertDescription, AlertTitle } from '@chadcn/upstream-shadcn-base/alert';
+import { Badge } from '@chadcn/upstream-shadcn-base/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '@chadcn/upstream-shadcn-base/card';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@chadcn/upstream-shadcn-base/dialog';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@chadcn/upstream-shadcn-base/select';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@chadcn/upstream-shadcn-base/tabs';
+import { Switch } from '@chadcn/upstream-shadcn-base/switch';
+import { Slider } from '@chadcn/upstream-shadcn-base/slider';
+import { Progress } from '@chadcn/upstream-shadcn-base/progress';
+import { Avatar, AvatarFallback } from '@chadcn/upstream-shadcn-base/avatar';
+import { Separator } from '@chadcn/upstream-shadcn-base/separator';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@chadcn/upstream-shadcn-base/tooltip';
+import { Popover, PopoverContent, PopoverTrigger } from '@chadcn/upstream-shadcn-base/popover';
+
+export const AlertExample = () => <Alert><AlertTitle>Heads up</AlertTitle><AlertDescription>This is an interactive registry preview.</AlertDescription></Alert>;
+export const BadgeExample = () => <div className="demo-button-row"><Badge>Default</Badge><Badge variant="secondary">Secondary</Badge><Badge variant="outline">Outline</Badge></div>;
+export const CardExample = () => <Card><CardHeader><CardTitle>Collection</CardTitle></CardHeader><CardContent>A card composed from the packaged Base UI adapter.</CardContent></Card>;
+export const DialogExample = () => <Dialog><DialogTrigger>Open dialog</DialogTrigger><DialogContent><DialogHeader><DialogTitle>Confirm action</DialogTitle><DialogDescription>This dialog is backed by the Base UI adapter.</DialogDescription></DialogHeader></DialogContent></Dialog>;
+export const SelectExample = () => <Select defaultValue="one"><SelectTrigger><SelectValue placeholder="Choose one" /></SelectTrigger><SelectContent><SelectItem value="one">One</SelectItem><SelectItem value="two">Two</SelectItem></SelectContent></Select>;
+export const TabsExample = () => <Tabs defaultValue="overview"><TabsList><TabsTrigger value="overview">Overview</TabsTrigger><TabsTrigger value="details">Details</TabsTrigger></TabsList><TabsContent value="overview">Overview content</TabsContent><TabsContent value="details">Details content</TabsContent></Tabs>;
+export const SwitchExample = () => { const [checked, setChecked] = useState(false); return <label className="demo-check-row"><Switch checked={checked} onCheckedChange={setChecked} /> Notifications: {checked ? 'on' : 'off'}</label>; };
+export const SliderExample = () => <Slider defaultValue={[40]} min={0} max={100} />;
+export const ProgressExample = () => <Progress value={64} />;
+export const AvatarExample = () => <Avatar><AvatarFallback>CH</AvatarFallback></Avatar>;
+export const SeparatorExample = () => <div><span>Above</span><Separator /><span>Below</span></div>;
+export const TooltipExample = () => <TooltipProvider><Tooltip><TooltipTrigger>Hover for details</TooltipTrigger><TooltipContent>Packaged Base UI tooltip</TooltipContent></Tooltip></TooltipProvider>;
+export const PopoverExample = () => <Popover><PopoverTrigger>Open popover</PopoverTrigger><PopoverContent>Packaged Base UI popover content.</PopoverContent></Popover>;

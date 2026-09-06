@@ -1,0 +1,39 @@
+{
+  "data": {
+    "id_str": "fixture-001",
+    "id": "fixture-001",
+    "text": "An illustrative local tweet fixture for the ClientTweetCard preview.",
+    "created_at": "Mon Sep 08 12:00:00 +0000 2025",
+    "user": {
+      "id_str": "fixture-user",
+      "name": "Illustrative author",
+      "screen_name": "local_fixture",
+      "url": "https://example.com/illustrative-author",
+      "profile_image_url_https": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Crect width='96' height='96' fill='%236b7280'/%3E%3Ctext x='48' y='56' text-anchor='middle' font-size='28' fill='white'%3EIF%3C/text%3E%3C/svg%3E",
+      "verified": false,
+      "is_blue_verified": false,
+      "profile_image_shape": "Circle"
+    },
+    "url": "https://example.com/illustrative-fixture",
+    "entities": {},
+    "display_text_range": [
+      0,
+      68
+    ],
+    "lang": "en",
+    "__typename": "Tweet",
+    "favorite_count": 0,
+    "conversation_count": 0,
+    "news_action_type": "conversation",
+    "isEdited": false,
+    "isStaleEdit": false,
+    "edit_control": {
+      "edit_tweet_ids": [
+        "fixture-001"
+      ],
+      "editable_until_msecs": "0",
+      "is_edit_eligible": false,
+      "edits_remaining": "0"
+    }
+  }
+}

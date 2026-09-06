@@ -1,0 +1,51 @@
+/* New skins are scoped so the original four remain unchanged. */
+html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) :is([data-slot="card"],.demo-workbench,.documentation-links a){border:2px solid var(--border);border-radius:var(--radius);box-shadow:6px 6px 0 var(--skin-shadow)}
+html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) :is([data-slot="button"],.home-page [data-slot="button"]){border:2px solid var(--border);border-radius:var(--radius);box-shadow:3px 3px 0 var(--skin-shadow);font-weight:750;transition:transform .12s,box-shadow .12s}
+html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) [data-slot="button"]:active:not(:disabled){transform:translate(3px,3px);box-shadow:0 0 0 var(--skin-shadow)}
+html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) :is([data-slot="input"],[data-slot="textarea"],.home-page [data-slot="input"],.home-page [data-slot="textarea"],select,.browser-search){border:2px solid var(--border);border-radius:var(--radius);background:var(--surface)}
+html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) :is(.home-hero h1 em,.home-closing h2){font-style:normal;font-family:var(--font-display);font-weight:900}
+html[data-theme="classic-brutal"] :is([data-slot="card"],[data-slot="badge"],[data-slot="button"],[data-slot="input"],[data-slot="textarea"],.home-chart span,.home-metrics>div,.demo-frame,.theme-trigger,.theme-options){border-radius:0}
+html[data-theme="classic-brutal"] :is(.home-hero h1,.browser-heading h1,[data-slot="card-title"]){text-transform:uppercase;font-weight:900}
+html[data-theme="classic-brutal"] :is(.home-header,.topbar,.sidebar){border-color:var(--border);border-width:2px}
+html[data-theme="neo-brutal"] .home-chart span{border:2px solid var(--border);opacity:1}
+html[data-theme="neo-brutal"] .home-chart>div:nth-child(3n+1) span{background:#ff92b1}
+html[data-theme="neo-brutal"] .home-chart>div:nth-child(3n+2) span{background:#afa1ff}
+html[data-theme="atelier"] :is(.home-page [data-slot="card"],.demo-workbench){border-radius:28px;box-shadow:0 8px 26px #492e1810}
+html[data-theme="atelier"] :is([data-slot="card-title"],.browser-heading h1,.browser-preview-heading h2){font-family:var(--font-display);font-size:1.5rem;font-weight:500}
+html[data-theme="atelier"] .home-page [data-slot="button"]{border-radius:999px}
+html[data-theme="blueprint"] :is(.home-page,.demo-canvas){background-image:linear-gradient(to right,color-mix(in srgb,var(--border) 22%,transparent) 1px,transparent 1px),linear-gradient(to bottom,color-mix(in srgb,var(--border) 22%,transparent) 1px,transparent 1px);background-size:24px 24px}
+html[data-theme="blueprint"] :is([data-slot="card"],.demo-workbench){border:1px solid var(--accent-border);border-radius:2px;box-shadow:none}
+html[data-theme="blueprint"] :is(.home-hero h1 em,[data-slot="card-title"]){font-style:normal;font-family:var(--font-ui)}
+.theme-options{width:280px;max-height:min(420px,65vh);overflow-y:auto;overscroll-behavior:contain;z-index:50}.theme-options button{white-space:nowrap}.theme-swatch{flex-shrink:0}.theme-swatch.neo-brutal{background:#ffd43b;border:2px solid #191919;border-radius:4px;box-shadow:2px 2px 0 #191919}.theme-swatch.classic-brutal{background:#ddff00;border:2px solid #191919;border-radius:0}.theme-swatch.atelier{background:#b9886b}.theme-swatch.blueprint{background:#175ad1;border-radius:2px}
+@media(max-width:760px){.theme-options{left:0;right:auto;max-width:calc(100vw - 40px)}.theme-trigger{gap:12px}.appearance-controls{row-gap:12px}}
+
+/* Semantic slots also cover portalled surfaces. Composed Base UI buttons retain
+   group/button when render props replace their data-slot with dialog-close. */
+html[data-theme="neo-brutal"] :is([data-slot="card"],.home-page [data-slot="card"],.demo-workbench,.library-tile,.library-screenshot,[data-slot="dialog-content"],[data-slot="alert-dialog-content"],[data-slot="popover-content"],[data-slot="dropdown-menu-content"],[data-slot="select-content"],.app-dropdown-content,.theme-options){border:3px solid var(--neo-line);border-radius:16px;box-shadow:6px 6px 0 var(--skin-shadow);background:var(--surface)}
+html[data-theme="neo-brutal"] :is([data-slot="button"],[class~="group/button"],.home-page [data-slot="button"],.theme-trigger,.app-dropdown-trigger,.demo-toolbar>button){border:2px solid var(--neo-line);border-radius:10px;box-shadow:3px 3px 0 var(--skin-shadow);font-weight:700;transition:translate .12s,box-shadow .12s}
+html[data-theme="neo-brutal"] :is([data-slot="button"],[class~="group/button"],.theme-trigger,.app-dropdown-trigger,.demo-toolbar>button):active:not(:disabled){translate:3px 3px;transform:none;box-shadow:none}
+html[data-theme="neo-brutal"] :is([data-slot="button"],[class~="group/button"],.theme-trigger,.app-dropdown-trigger):focus-visible{outline:3px solid var(--foreground);outline-offset:5px}
+html[data-theme="neo-brutal"] :is([data-slot="input"],[data-slot="textarea"],.browser-search,.home-page [data-slot="input"],.home-page [data-slot="textarea"]){border:2px solid var(--neo-line);border-radius:10px;box-shadow:2px 2px 0 var(--skin-shadow)}
+html[data-theme="neo-brutal"] :is([data-slot="dialog-title"],[data-slot="alert-dialog-title"],[data-slot="card-title"],.browser-preview-heading h2){font-weight:800;letter-spacing:-.035em}
+html[data-theme="neo-brutal"] :is([data-slot="dialog-content"],[data-slot="alert-dialog-content"]){padding:24px;gap:20px}
+html[data-theme="neo-brutal"] :is([data-slot="dialog-footer"],[data-slot="alert-dialog-footer"]){margin:0;padding:16px 0 0;border-top:2px solid var(--neo-line);border-radius:0;background:transparent}
+html[data-theme="neo-brutal"] :is([data-slot="dialog-overlay"],[data-slot="alert-dialog-overlay"]){backdrop-filter:none;background:rgb(24 24 24 / 25%)}
+html[data-theme="neo-brutal"] :is(.theme-trigger,.app-dropdown-trigger,.demo-toolbar>button){background:var(--surface)}
+html[data-theme="neo-brutal"] .mode-toggle{border:2px solid var(--neo-line);border-radius:12px;padding:4px;background:var(--surface)}
+html[data-theme="neo-brutal"] .mode-toggle button{border-radius:7px;font-weight:700}
+html[data-theme="neo-brutal"] :is(.browser-items button[aria-pressed="true"],.sidebar .nav-item.active){border:2px solid var(--neo-line);border-radius:12px;box-shadow:3px 3px 0 var(--skin-shadow);background:var(--accent);color:var(--primary-foreground)}
+html[data-theme="neo-brutal"] :is(.demo-canvas,.home-hero){background:var(--neo-stage)}
+html[data-theme="neo-brutal"] .home-hero{border-block:2px solid var(--neo-line);padding-block:72px}
+html[data-theme="neo-brutal"] :is(.home-hero h1,.home-hero h1 em,.home-closing h2){font-family:var(--font-display);font-weight:900;letter-spacing:-.065em;line-height:.98}
+html[data-theme="neo-brutal"] .home-closing{background:var(--accent);color:#181818;border:3px solid #181818;border-radius:20px;box-shadow:7px 7px 0 #181818}
+html[data-theme="neo-brutal"] .home-chart span{border-radius:8px 8px 0 0}
+html[data-theme="neo-brutal"] .theme-swatch.neo-brutal{background:#b09cf8}
+
+/* Shared surface and control anatomy, including alerts and compact primitives. */
+html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) :is([data-slot="alert"],[data-slot="accordion-item"],[data-slot="tabs-list"],[data-slot="badge"],[data-slot="checkbox"],[data-slot="switch"],[data-slot="toggle"],[data-slot="select-trigger"],.mode-switch){border:2px solid var(--border);box-shadow:3px 3px 0 var(--skin-shadow);border-radius:var(--radius)}
+html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) [data-slot="alert"]{border-width:3px;box-shadow:5px 5px 0 var(--skin-shadow);margin-bottom:5px}
+html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) [data-slot="alert"].text-destructive{border-color:var(--destructive);box-shadow:5px 5px 0 var(--destructive)}
+html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) [data-slot="badge"]{border-radius:6px;padding:3px 8px}
+html[data-theme="classic-brutal"] :is([data-slot="badge"],[data-slot="alert"],[data-slot="dialog-content"],[data-slot="popover-content"],[data-slot="select-trigger"],.mode-switch){border-radius:0}
+.mode-switch{align-items:center;gap:5px;padding:4px}
+.mode-switch [data-slot="button"]{width:32px;height:32px;padding:6px;box-shadow:none!important;border:0!important;display:inline-flex;align-items:center;justify-content:center;border-radius:6px}

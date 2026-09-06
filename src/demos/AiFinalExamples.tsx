@@ -1,0 +1,30 @@
+import { useState } from 'react';
+import type { Demo } from './manifest';
+import { AudioPlayer, AudioPlayerControlBar, AudioPlayerElement, AudioPlayerPlayButton, AudioPlayerTimeDisplay } from '@chadcn/upstream-ai-elements/audio-player';
+import { CodeBlock, CodeBlockCopyButton } from '@chadcn/upstream-ai-elements/code-block';
+import { Image } from '@chadcn/upstream-ai-elements/image';
+import { MicSelector, MicSelectorContent, MicSelectorItem, MicSelectorTrigger, MicSelectorValue } from '@chadcn/upstream-ai-elements/mic-selector';
+import { OpenIn, OpenInContent, OpenInItem, OpenInTrigger } from '@chadcn/upstream-ai-elements/open-in-chat';
+import { Persona } from '@chadcn/upstream-ai-elements/persona';
+import { PromptInput, PromptInputBody, PromptInputSubmit, PromptInputTextarea } from '@chadcn/upstream-ai-elements/prompt-input';
+import { Sandbox, SandboxCode, SandboxContent, SandboxHeader, SandboxOutput } from '@chadcn/upstream-ai-elements/sandbox';
+import { SpeechInput } from '@chadcn/upstream-ai-elements/speech-input';
+import { Toolbar } from '@chadcn/upstream-ai-elements/toolbar';
+import { Canvas } from '@chadcn/upstream-ai-elements/canvas';
+import { VoiceSelector, VoiceSelectorContent, VoiceSelectorGroup, VoiceSelectorItem, VoiceSelectorList, VoiceSelectorName, VoiceSelectorTrigger } from '@chadcn/upstream-ai-elements/voice-selector';
+import { Button } from '@chadcn/upstream-shadcn/button';
+
+export function AiAudioPlayerDemo() { return <AudioPlayer><AudioPlayerElement src="/demo-tone.wav" /><AudioPlayerControlBar><AudioPlayerPlayButton /><AudioPlayerTimeDisplay /></AudioPlayerControlBar></AudioPlayer>; }
+export function AiCodeBlockDemo() { return <CodeBlock code={'const answer = "local";'} language="typescript" showLineNumbers><CodeBlockCopyButton /></CodeBlock>; }
+export function AiImageDemo() { return <Image base64="PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0ODAiIGhlaWdodD0iMjQwIiB2aWV3Qm94PSIwIDAgNDgwIDI0MCI+PHJlY3Qgd2lkdGg9IjQ4MCIgaGVpZ2h0PSIyNDAiIGZpbGw9IiNmNGVlZTUiLz48Y2lyY2xlIGN4PSIzNjAiIGN5PSI3NSIgcj0iNDIiIGZpbGw9IiNlZDk3NmUiLz48cGF0aCBkPSJNMCAyMTAgMTEwIDg1IDI0NSAyMjUgMzcwIDEyNSA0ODAgMjMwVjI0MEgwWiIgZmlsbD0iIzY2ODg3OCIvPjx0ZXh0IHg9IjI0IiB5PSIzOCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMxZDI2MjIiPkxvY2FsIGltYWdlIHByZXZpZXc8L3RleHQ+PC9zdmc+" uint8Array={new Uint8Array()} mediaType="image/svg+xml" alt="Illustrated mountain landscape with a warm sun" />; }
+export function AiMicSelectorDemo() { return <MicSelector><MicSelectorTrigger><MicSelectorValue /></MicSelectorTrigger><MicSelectorContent><MicSelectorItem value="default">Default microphone</MicSelectorItem></MicSelectorContent></MicSelector>; }
+export function AiOpenInDemo() { const [copied, setCopied] = useState(false); return <OpenIn query="Review this local draft"><OpenInTrigger /><OpenInContent><OpenInItem onSelect={async()=>{try { await navigator.clipboard.writeText('Review this local draft'); setCopied(true); } catch { setCopied(false); }}}>{copied ? 'Copied prompt' : 'Copy prompt'}</OpenInItem></OpenInContent></OpenIn>; }
+export function AiPersonaDemo() { return <Persona state="thinking" variant="glint" />; }
+export function AiPromptInputDemo() { const [messages, setMessages] = useState<string[]>([]); return <div className="demo-form"><PromptInput onSubmit={({ text })=>{ if(text.trim()) setMessages(current=>[...current, text.trim()]); }}><PromptInputBody><PromptInputTextarea placeholder="Write a local message" /><PromptInputSubmit /></PromptInputBody></PromptInput><div aria-live="polite">{messages.map((message,index)=><p key={index}>Submitted locally: {message}</p>)}</div></div>; }
+export function AiSandboxDemo() { return <Sandbox defaultOpen><SandboxHeader title="Local code run" state="output-available" /><SandboxContent><SandboxCode code={'console.log("ready")'} language="javascript" /><SandboxOutput code="ready" /></SandboxContent></Sandbox>; }
+export function AiSpeechInputDemo() { const [text,setText]=useState(''); return <div className="demo-form"><SpeechInput aria-label="Start speech input" onTranscriptionChange={setText} /><span aria-live="polite">{text || 'Speech starts only after user activation.'}</span></div>; }
+export function AiToolbarDemo() { const [added,setAdded]=useState(false); return <div style={{height:180}}><Canvas nodes={[{id:'toolbar-node',position:{x:70,y:55},data:{label:'Selected node'}}]} edges={[]}><Toolbar nodeId="toolbar-node" isVisible><Button size="sm" onClick={()=>setAdded(true)}>Add action</Button>{added&&<span aria-live="polite">Added locally</span>}</Toolbar></Canvas></div>; }
+export function AiVoiceSelectorDemo() { const [voice, setVoice] = useState('Aster'); return <VoiceSelector defaultValue={voice} onValueChange={value=>setVoice(value ?? 'Aster')}><VoiceSelectorTrigger>{voice}</VoiceSelectorTrigger><VoiceSelectorContent title="Choose voice"><VoiceSelectorGroup heading="Local voices"><VoiceSelectorList><VoiceSelectorItem value="Aster"><VoiceSelectorName>Aster</VoiceSelectorName></VoiceSelectorItem><VoiceSelectorItem value="Vale"><VoiceSelectorName>Vale</VoiceSelectorName></VoiceSelectorItem></VoiceSelectorList></VoiceSelectorGroup></VoiceSelectorContent></VoiceSelector>; }
+
+const components = { 'audio-player': AiAudioPlayerDemo, 'code-block': AiCodeBlockDemo, image: AiImageDemo, 'mic-selector': AiMicSelectorDemo, 'open-in-chat': AiOpenInDemo, persona: AiPersonaDemo, 'prompt-input': AiPromptInputDemo, sandbox: AiSandboxDemo, 'speech-input': AiSpeechInputDemo, toolbar: AiToolbarDemo, 'voice-selector': AiVoiceSelectorDemo } as const;
+export const aiFinalEntries: Demo[] = Object.entries(components).map(([name, component]) => ({ id: `ai-elements:${name}`, title: name.replaceAll('-', ' '), source: 'ai-elements', kind: 'Component', description: `Interactive ${name.replaceAll('-', ' ')} preview using the packaged AI Elements component.`, importPath: `@chadcn/upstream-ai-elements/${name}`, load: () => import('./AiFinalExamples').then(() => ({ default: component })) }));

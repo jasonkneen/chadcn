@@ -1,0 +1,1 @@
+{"code":"export { cn } from \"cn\"\n","types":"export { cn } from \"cn\";\n","variants":{},"repository":"https://github.com/shadcn-ui/ui","path":"apps/v4/registry/bases/base/lib/utils.ts","url":"https://github.com/shadcn-ui/ui/blob/HEAD/apps/v4/registry/bases/base/lib/utils.ts"}

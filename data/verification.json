@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-06",
+  "catalogEntries": 2071,
+  "statusCounts": {
+    "metadata-only": 11,
+    "packaged": 1288,
+    "needs-adapter": 10,
+    "npm-available": 1,
+    "discovered": 761
+  },
+  "verified": [
+    "8 Node regression tests pass",
+    "Live source hashes and exported module paths match",
+    "TypeScript check passes",
+    "Vite production build passes",
+    "Browser duplicate-family selection and ungrouping pass",
+    "Browser composition loading/content toggle passes",
+    "Mobile source filter and duplicate selection pass"
+  ],
+  "remaining": [
+    "Full dependency installation",
+    "All discovered libraries adapted and installed",
+    "Full styles/assets and runtime isolation",
+    "External registry distribution",
+    "Git repository initialization"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "chadcn",
+  "name": "chadcn",
+  "description": "Components and interface compositions created across our projects, collected with their source and reuse requirements.",
+  "auditedAt": "2026-09-06",
+  "candidates": [
+    {"name":"composer-select","project":"Agent Farm","kind":"Component","status":"Ready for packaging","source":"claude-farm/desktop/frontend/src/components/composer-select.tsx","work":"Controlled options and selection; connect shared dropdown primitives and preserve source attribution."},
+    {"name":"dock-tabs","project":"Agent Farm","kind":"Component","status":"Adaptation required","source":"claude-farm/desktop/frontend/src/components/dock-tabs.tsx","work":"Carry drag/drop context and tab contracts; scope app typography and docking styles."},
+    {"name":"resizable-bento-grid","project":"Agent Farm","kind":"Component","status":"Adaptation required","source":"claude-farm/desktop/frontend/src/components/bento-grid.tsx","work":"Expose layout persistence through callbacks and map typography tokens."},
+    {"name":"mermaid-diagram","project":"Agent Farm","kind":"Component","status":"Adaptation required","source":"claude-farm/desktop/frontend/src/components/mermaid-diagram.tsx","work":"Make theme changes explicit and retain Mermaid attribution."},
+    {"name":"log-viewer","project":"Andromeda","kind":"Block","status":"Package boundary ready","source":"sky-zest-marble-umbra/packages/blocks/src/logs/LogViewerBlock.tsx","work":"Map extracted UI dependencies and prefer structured log records."},
+    {"name":"run-timeline","project":"Andromeda","kind":"Block","status":"Package boundary ready","source":"sky-zest-marble-umbra/packages/blocks/src/logs/RunTimelineBlock.tsx","work":"Carry layout helpers and map execution status tokens."},
+    {"name":"workflow-canvas","project":"Andromeda","kind":"Block","status":"Adaptation required","source":"sky-zest-marble-umbra/packages/blocks/src/workflow/index.tsx","work":"Keep the controlled node/edge contract and React Flow attribution; include provider and CSS."},
+    {"name":"editable-data-grid","project":"Andromeda","kind":"Block","status":"Adaptation required","source":"sky-zest-marble-umbra/packages/blocks/src/database/DbDataGridBlock.tsx","work":"Extract portable column and row contracts from database-specific helpers."},
+    {"name":"resource-list-row","project":"Conductor","kind":"Component","status":"Adaptation required","source":"conductor-cloud/src/ui/blocks/data-list.tsx","work":"Map semantic tokens and carry avatar, status, and metrics primitives."},
+    {"name":"provisioning-state","project":"Conductor","kind":"Block","status":"Adaptation required","source":"conductor-cloud/src/ui/blocks/provisioning.tsx","work":"Map tokens and animation utilities; document success and failure states."}
+  ]
+}

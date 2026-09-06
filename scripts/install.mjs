@@ -1,0 +1,11 @@
+import { spawnSync } from 'node:child_process';
+import { root, readJSON, writeJSON } from './lib.mjs';
+import { enterWorkspaceLock, workspaceStdio } from './workspace-lock.mjs';
+enterWorkspaceLock();
+const offline = process.argv.includes('--offline');
+const sync = spawnSync(process.execPath,['scripts/sync.mjs'],{cwd:root,stdio:workspaceStdio()});
+if (sync.status !== 0) process.exit(sync.status??1);
+const installed = spawnSync('npm',['install','--ignore-scripts','--no-audit','--no-fund',...(offline?['--offline']:[])],{cwd:root,stdio:workspaceStdio()});
+if (installed.status !== 0) process.exit(installed.status??1);
+const lock = await readJSON(`${root}/sources.lock.json`);
+await writeJSON(`${root}/.generated/installation.json`,{installedAt:new Date().toISOString(),sourceHashes:Object.fromEntries(lock.sources.filter(s=>s.contentHash).map(s=>[s.id,s.contentHash]))});

@@ -1,0 +1,52 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@import "tw-animate-css";
+@import "@chadcn/upstream-shadcn/tailwind.css";
+@import "@chadcn/upstream-shadcn/style-nova.css";
+@source "../packages/upstream-shadcn/src";
+@source "../packages/upstream-kibo/src";
+@source "../packages/upstream-magicui/src";
+@source "../packages/upstream-ai-elements/src";
+@source "../packages/upstream-blocks/src";
+@source "../packages/upstream-shadcn-base/src";
+@source "../packages/upstream-shadcn-radix/src";
+@source "../packages/upstream-shadcn-aria/src";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-popover: var(--surface);
+  --color-popover-foreground: var(--foreground);
+  --color-sidebar: var(--surface);
+  --color-sidebar-foreground: var(--foreground);
+  --color-sidebar-primary: var(--primary);
+  --color-sidebar-primary-foreground: var(--primary-foreground);
+  --color-sidebar-accent: var(--accent);
+  --color-sidebar-accent-foreground: var(--accent-foreground);
+  --color-sidebar-border: var(--border);
+  --color-sidebar-ring: var(--ring);
+  --color-card: var(--surface);
+  --color-card-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --radius-sm: max(0px, calc(var(--radius) - 2px));
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 6px);
+}
+@layer base {
+  .demo-surface *, .demo-surface ::before, .demo-surface ::after { border: 0 solid; }
+  .demo-surface input, .demo-surface textarea, .demo-surface button, .demo-surface select { font: inherit; color: inherit; }
+  .demo-surface table { border-collapse: collapse; }
+}

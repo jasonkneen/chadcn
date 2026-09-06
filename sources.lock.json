@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "shadcn",
+      "repository": "https://github.com/shadcn-ui/ui",
+      "kind": "registry",
+      "commit": "7c9eaba1c0a6404c990c144a654792e3313c650d",
+      "dirty": false,
+      "status": "partial",
+      "items": 411,
+      "modules": 474,
+      "problems": [],
+      "contentHash": "4fa65bb9b749f1ccf5af7b3854dda75aae96b511f70064cb065d8d025af94fa5"
+    },
+    {
+      "id": "blocks",
+      "repository": "https://github.com/ephraimduncan/blocks",
+      "kind": "registry",
+      "commit": "78cd7a3777c055415d18f2d2c69846abac94052c",
+      "dirty": false,
+      "status": "packaged",
+      "items": 80,
+      "modules": 151,
+      "problems": [],
+      "contentHash": "a81fd7c02e63645fb929e64b0715553efcb9272f58c9c0256c97e5699194bfc5"
+    },
+    {
+      "id": "kibo",
+      "repository": "https://github.com/shadcnblocks/kibo",
+      "kind": "packages",
+      "commit": "3d63cdb15b79d972e3dc38a10997987672f9b263",
+      "dirty": false,
+      "status": "packaged",
+      "items": 40,
+      "modules": 64,
+      "problems": [],
+      "contentHash": "f067a61c6ef1b17b7648ca63503694e0696695f8086e3b177f996317d56cd5ca"
+    },
+    {
+      "id": "shadcn-base",
+      "repository": "https://github.com/shadcn-ui/ui",
+      "kind": "registry-tree",
+      "commit": "7c9eaba1c0a6404c990c144a654792e3313c650d",
+      "dirty": false,
+      "status": "packaged",
+      "items": 162,
+      "modules": 321,
+      "problems": [],
+      "contentHash": "2a5a81cdf5967facef3aa756add812a4432f1e28553afd7e251c0f572c1db268"
+    },
+    {
+      "id": "shadcn-radix",
+      "repository": "https://github.com/shadcn-ui/ui",
+      "kind": "registry-tree",
+      "commit": "7c9eaba1c0a6404c990c144a654792e3313c650d",
+      "dirty": false,
+      "status": "packaged",
+      "items": 160,
+      "modules": 329,
+      "problems": [],
+      "contentHash": "b1a3e7ae0ae3808b17f27d5e462148a081f6a32bd70367f84db68dd5ef9b1b39"
+    },
+    {
+      "id": "shadcn-aria",
+      "repository": "https://github.com/shadcn-ui/ui",
+      "kind": "registry-tree",
+      "commit": "7c9eaba1c0a6404c990c144a654792e3313c650d",
+      "dirty": false,
+      "status": "packaged",
+      "items": 156,
+      "modules": 317,
+      "problems": [],
+      "contentHash": "651578be78eaf5f4bc4896400d193c22c481d03e1e16658b8372d374bf6af240"
+    },
+    {
+      "id": "magicui",
+      "repository": "https://github.com/magicuidesign/magicui",
+      "kind": "registry",
+      "commit": "8e56d60ac8ef49b856623f7c3eeafa2df8459410",
+      "dirty": false,
+      "status": "packaged",
+      "items": 207,
+      "modules": 214,
+      "problems": [],
+      "contentHash": "be695430e8aeb045d4e8d233b7355e71a3aa56d80cd9e8677d5f6ef5958a9f68"
+    },
+    {
+      "id": "ai-elements",
+      "repository": "https://github.com/vercel/ai-elements",
+      "kind": "tree",
+      "commit": "ba34adc2eea643d0962e0401b4b3f4eb60bbfd1a",
+      "dirty": true,
+      "status": "packaged",
+      "items": 37,
+      "modules": 59,
+      "problems": [],
+      "contentHash": "0adc6c5354057ae84213978ec63387cee29678ecda4272e90f4a02ec3f4bd4bd"
+    },
+    {
+      "id": "assistant-ui",
+      "repository": "https://github.com/assistant-ui/assistant-ui",
+      "kind": "npm",
+      "commit": "26a4654d33bc2632459d84ac72cc4e98fbade205",
+      "dirty": false,
+      "status": "npm-available"
+    },
+    {
+      "id": "ai-elements-vue",
+      "repository": "https://github.com/vuepont/ai-elements-vue",
+      "kind": "directory",
+      "commit": "c3a4bfae090c7a62bf399c15e0bf46123ee95bd3",
+      "dirty": false,
+      "status": "discovered"
+    },
+    {
+      "id": "shadcn-cssinjs",
+      "repository": "https://github.com/shadcn-labs/shadcn-cssinjs",
+      "kind": "registry",
+      "commit": "5f0337ee4606f5d6c8f3cb2cb95924c8a70e9a5f",
+      "dirty": false,
+      "status": "packaged",
+      "items": 56,
+      "modules": 57,
+      "problems": [],
+      "contentHash": "6c25b51511a8d23c2bc727b002c32158c3c69a44a7e1352741f0ab2e07f934e4"
+    }
+  ],
+  "discovery": {
+    "repository": "birobirobiro/awesome-shadcn-ui",
+    "url": "https://raw.githubusercontent.com/birobirobiro/awesome-shadcn-ui/main/README.md",
+    "cache": "data/awesome-shadcn-ui.md",
+    "sha256": "522865f9f78df3ec2076ff9cba114de9fc426b8cfe5e8a55eb42109a04e6b6c8"
+  },
+  "generation": "5ae84a34e3cab19a38a07bf8497caa07eaadf11501a3b87da5234b7ecf57e3f8"
+}

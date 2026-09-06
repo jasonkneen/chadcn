@@ -1,0 +1,14 @@
+{
+ "$schema":"https://ui.shadcn.com/schema/registry.json",
+ "name":"chadcn",
+ "homepage":"http://localhost:4310",
+ "items":[{
+  "name":"collection-card",
+  "type":"registry:block",
+  "title":"Collection Card",
+  "description":"A reusable composition of a shadcn Card and Kibo Spinner, imported from upstream workspace packages.",
+  "dependencies":["@chadcn/ui"],
+  "files":[],
+  "meta":{"distribution":"workspace-only","import":"@chadcn/ui/collection-card","sources":["shadcn:card","kibo:spinner"],"note":"Packages are local to this workspace and are not published to npm."}
+ }]
+}

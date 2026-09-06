@@ -1,0 +1,1 @@
+{"code":"export default function Preview03() {\n  return <div>Preview 03</div>\n}\n","types":"export default function Preview03(): any;\n","variants":{},"repository":"https://github.com/shadcn-ui/ui","path":"apps/v4/registry/bases/aria/blocks/preview-03/index.tsx","url":"https://github.com/shadcn-ui/ui/blob/HEAD/apps/v4/registry/bases/aria/blocks/preview-03/index.tsx"}
