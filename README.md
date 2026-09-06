@@ -63,8 +63,10 @@ No model account or AI subscription is required to use the CLI itself.
 
 Use explicit registry identities, inspect source before installation, and verify
 real interactions. Do not treat catalog metadata as runnable UI or report local
-fixtures as connected services. WebMCP support is planned for a later iteration;
-it is not implemented in this release.
+fixtures as connected services. WebMCP browser tools support catalog search, inspection, and opening previews
+when the browser exposes the API. See [WebMCP setup](docs/webmcp.md).
+[Design](skills/chadcn-design/SKILL.md) and [app-building](skills/chadcn-apps/SKILL.md)
+skills are included for agents. The proprietary database service is separate.
 
 ## Work on the site
 

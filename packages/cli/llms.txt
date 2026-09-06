@@ -8,4 +8,5 @@
 
 Commands: init, add, view, search. Installation delegates to shadcn 4.21.0.
 Bare names use its default registry; registry URLs and namespaces pass through.
-Private workspace compositions are not yet distributed. WebMCP is not implemented.
+Private workspace compositions are not yet distributed. Browser WebMCP support is documented at https://chadcn.dev/llms.txt;
+this CLI does not provide a remote MCP transport.

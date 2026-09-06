@@ -17,7 +17,8 @@ Do not overwrite project files without reviewing changes. Keep upstream licenses
 The website catalog is broader than installable coverage. Private workspace
 packages @chadcn/ui and @chadcn/upstream-* are not public npm dependencies.
 App demos use local state, not connected email or AI services.
-WebMCP is planned and unavailable in this release.
+The website supports WebMCP discovery in compatible browsers; this CLI itself
+does not expose an MCP transport. See https://chadcn.dev/llms.txt for current tools.
 
 Website: https://chadcn.dev
 Repository instructions: https://github.com/jasonkneen/chadcn/blob/main/AGENTS.md

@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import path from 'node:path';
+const root = path.resolve(import.meta.dirname, '..');
+const read = file => fs.readFileSync(path.join(root, file), 'utf8');
+const write = (file, value) => { fs.mkdirSync(path.dirname(path.join(root,file)), {recursive:true}); fs.writeFileSync(path.join(root,file),value); };
+write('public/AGENTS.md', read('AGENTS.md'));
+write('public/llm.txt', read('public/llms.txt'));
+for (const name of ['chadcn-design','chadcn-apps']) write(`public/skills/${name}/SKILL.md`,read(`skills/${name}/SKILL.md`));
+const catalog=JSON.parse(read('data/catalog.json'));
+write('public/agent/catalog.json',JSON.stringify({schemaVersion:1,generation:catalog.generation,scope:'Registry inventory, including metadata and items without runnable previews. Not an installable registry.',items:catalog.items.map(({id,name,source,type,description,status,homepage,repository})=>({id,name,source,type,description,status,homepage,repository}))}));

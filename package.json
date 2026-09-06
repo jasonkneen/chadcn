@@ -25,9 +25,10 @@
     "reference": "node scripts/demo-reference.mjs",
     "coverage": "node --import tsx scripts/demo-coverage.ts",
     "assemble:stylex": "node scripts/assemble-stylex-examples.mjs",
-    "prebuild": "npm run assemble:stylex && npm run assemble:forms",
-    "predev": "npm run assemble:stylex && npm run assemble:forms",
-    "assemble:forms": "node scripts/assemble-legacy-forms.mjs"
+    "prebuild": "npm run assemble:stylex && npm run assemble:forms && npm run agent:assets",
+    "predev": "npm run assemble:stylex && npm run assemble:forms && npm run agent:assets",
+    "assemble:forms": "node scripts/assemble-legacy-forms.mjs",
+    "agent:assets": "node scripts/agent-assets.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",

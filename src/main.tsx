@@ -1,3 +1,4 @@
+import { createCatalogTools, registerCatalogTools } from './webmcp.mjs';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@chadcn/upstream-shadcn/tabs';
 import { Label } from '@chadcn/upstream-shadcn/label';
 import { Button } from '@chadcn/upstream-shadcn/button';
@@ -25,6 +26,16 @@ type Section = 'home'|'components'|'blocks'|'apps'|'documentation';
 const sections: [Section,string][] = [['components','Components'],['blocks','Blocks'],['apps','Apps'],['documentation','Documentation']];
 const sectionFor = (demo:Demo):Section => demo.kind==='App'?'apps':demo.kind==='Block'?'blocks':'components';
 function App({items}:{items:Item[]}) {
+ useEffect(()=>{
+  let dispose=()=>{};let ended=false;
+  const context=(document as Document & {modelContext?:{registerTool:Function}}).modelContext;
+  registerCatalogTools(context,createCatalogTools(demos,(demo:Demo)=>{
+   const url=new URL('/',location.origin);url.searchParams.set('demo',demo.id);url.searchParams.set('view',sectionFor(demo));
+   history.pushState(null,'',url);window.dispatchEvent(new PopStateEvent('popstate'));
+  })).then(cleanup=>{if(ended)cleanup();else dispose=cleanup}).catch(error=>console.warn('WebMCP registration unavailable',error));
+  return()=>{ended=true;dispose()};
+ },[]);
+
  const validPath=location.pathname==='/';
  const initial=validPath?demos.find(d=>d.id===new URLSearchParams(location.search).get('demo')):undefined;
  const [section,setSection]=useState<Section>(!validPath?'home':initial?sectionFor(initial):(['components','blocks','apps','documentation'].includes(new URLSearchParams(location.search).get('view')??'')?new URLSearchParams(location.search).get('view') as Section:'home'));
