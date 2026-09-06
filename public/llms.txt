@@ -17,8 +17,8 @@
 ## CLI
 
 Package and executable: chadcn-ux. Node.js 22 or later.
-First release prepared; npm publication pending authentication.
-After publication:
+Version 0.1.0 is published on npm: https://www.npmjs.com/package/chadcn-ux
+Commands:
 
     npx chadcn-ux init
     npx chadcn-ux view button

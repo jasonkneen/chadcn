@@ -20,8 +20,7 @@ component, and an app demo is not a connected production service.
 ## Install components
 
 The npm package and CLI are named **`chadcn-ux`**. The product is **chadcn**.
-The first CLI release is prepared here; npm publication is pending authentication.
-After publication, use:
+Version 0.1.0 is [available on npm](https://www.npmjs.com/package/chadcn-ux). Use:
 
 ```sh
 npx chadcn-ux init

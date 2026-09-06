@@ -8,7 +8,7 @@ unless requested.
 ## Using the library from another project
 
 - Read `public/llms.txt` and `packages/cli/README.md` for the install contract.
-- After npm publication: `npx chadcn-ux init`, then `npx chadcn-ux add button`.
+- Published CLI: `npx chadcn-ux init`, then `npx chadcn-ux add button`.
 - The CLI delegates to a pinned shadcn installer. Bare names use the default
   shadcn registry. Use an explicit registry URL or configured namespace for another
   provider. Use `add --dry-run` or `view` to inspect before installing.
