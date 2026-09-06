@@ -28,6 +28,10 @@ for (const source of sources) {
 }
 const modules = path.join(root, 'node_modules');
 if (!fs.existsSync(modules)) fs.symlinkSync(path.join(root, 'deploy/node_modules'), modules, 'dir');
+for (const directory of seen.keys()) {
+  const upstreamModules = path.join(directory, 'node_modules');
+  if (!fs.existsSync(upstreamModules)) fs.symlinkSync(path.join(root, 'deploy/node_modules'), upstreamModules, 'dir');
+}
 run(process.execPath, ['scripts/sync.mjs']);
 run(process.execPath, ['scripts/link.mjs']);
 run('npm', ['run', 'build']);

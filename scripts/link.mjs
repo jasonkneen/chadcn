@@ -9,11 +9,12 @@ for(const name of await fs.readdir(`${root}/packages`)){
  if(!pkg)continue;
  const link=path.join(root,'node_modules',pkg.name);
  await fs.mkdir(path.dirname(link),{recursive:true});
+ const physicalParent=await fs.realpath(path.dirname(link));
  const existing=await fs.lstat(link).catch(()=>null);
  if(existing){
-  if(existing.isSymbolicLink() && path.resolve(path.dirname(link),await fs.readlink(link))===target)continue;
+  if(existing.isSymbolicLink() && path.resolve(physicalParent,await fs.readlink(link))===target)continue;
   throw new Error(`Refusing to replace an existing package: ${link}`);
  }
- await fs.symlink(path.relative(path.dirname(link),target),link,'dir');
+ await fs.symlink(path.relative(physicalParent,target),link,'dir');
  console.log(`Linked ${pkg.name}`);
 }
