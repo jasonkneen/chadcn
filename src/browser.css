@@ -49,3 +49,13 @@ html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) .sidebar :is(.n
 @media(max-width:760px){.mobile-category-items{display:block}.mobile-category-items .browser-items{position:static;display:flex;flex-direction:row;flex-wrap:wrap;max-height:160px;gap:8px}.mobile-category-items .browser-items>button{width:auto;padding:6px 10px}.mobile-category-items .browser-items strong{font-size:13px}.mobile-category-items .browser-search{flex-basis:100%}.workbench-content>.component-reference{padding:14px}}
 
 .nested-category-items .browser-items{max-height:calc(100dvh - 560px)}
+
+.app-workbench{gap:0;min-width:0}
+.app-tabbar{display:flex;align-items:center;padding:8px 16px;border-bottom:1px solid var(--border)}
+.app-tabbar [data-slot=tabs-list]{height:34px;padding:3px}
+.app-tabbar [data-slot=tabs-trigger]{font-size:13px;padding:4px 12px;min-height:26px}
+.app-workbench>[data-slot=tabs-content]{margin:0;min-width:0}
+.app-workbench>[data-state=inactive]{display:none}
+.app-preview-panel .demo-canvas{padding:0;min-height:0;width:100%}
+.app-preview-panel .demo-frame{display:block;border:0;border-radius:0;max-width:100%}
+.app-code-panel .component-reference{border:0;padding:20px;min-width:0}

@@ -44,6 +44,8 @@ html[data-theme="neo-brutal"] .theme-swatch.neo-brutal{background:#b09cf8}
 /* Shared surface and control anatomy, including alerts and compact primitives. */
 html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) :is([data-slot="alert"],[data-slot="accordion-item"],[data-slot="tabs-list"],[data-slot="badge"],[data-slot="checkbox"],[data-slot="switch"],[data-slot="toggle"],[data-slot="select-trigger"],.mode-switch){border:2px solid var(--border);box-shadow:3px 3px 0 var(--skin-shadow);border-radius:var(--radius)}
 html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) [data-slot="alert"]{border-width:3px;box-shadow:5px 5px 0 var(--skin-shadow);margin-bottom:5px}
+html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) [data-slot="accordion-item"]{padding-inline:16px;margin-bottom:12px;background:var(--surface)}
+html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) [data-slot="accordion-item"]:last-child{margin-bottom:3px}
 html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) [data-slot="alert"].text-destructive{border-color:var(--destructive);box-shadow:5px 5px 0 var(--destructive)}
 html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) [data-slot="badge"]{border-radius:6px;padding:3px 8px}
 html[data-theme="classic-brutal"] :is([data-slot="badge"],[data-slot="alert"],[data-slot="dialog-content"],[data-slot="popover-content"],[data-slot="select-trigger"],.mode-switch){border-radius:0}
