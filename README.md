@@ -99,5 +99,11 @@ Small, complete improvements are welcome: fix a preview, add a usable example,
 improve accessibility, or make an existing component installable. Retain original
 licenses and source attribution. Describe what changed and how you verified it.
 
-The CLI is [MIT licensed](packages/cli/LICENSE). Upstream components keep their
-respective licenses; the CLI license does not relicense the entire catalog.
+## License
+
+chadcn-authored code, including the website and CLI, is [MIT licensed](LICENSE).
+Copyright © 2026 Jason Kneen.
+
+Upstream components, dependencies, screenshots, logos, and other third-party
+material retain their respective licenses and rights. See
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

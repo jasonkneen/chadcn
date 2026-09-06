@@ -137,5 +137,6 @@
     "@vitejs/plugin-vue": "6.0.8",
     "@types/node": "24.13.3",
     "tsx": "4.23.13"
-  }
+  },
+  "license": "MIT"
 }
