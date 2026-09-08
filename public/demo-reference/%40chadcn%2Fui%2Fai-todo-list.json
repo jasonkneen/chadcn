@@ -1,0 +1,8 @@
+{
+  "code": "import { AITodoList } from \"@chadcn/ui/ai-todo-list\";\n\n<AITodoList autoPlay onComplete={() => {\n  // Local sequence finished. Remount with a new key to replay.\n}} />",
+  "types": "export interface TodoTask {\n  id: string;\n  parts: { kind: \"text\" | \"chip\"; value: string }[];\n}\nexport interface AITodoListProps {\n  tasks?: TodoTask[];\n  autoPlay?: boolean;\n  onComplete?: () => void;\n  className?: string;\n}",
+  "variants": {},
+  "repository": "",
+  "path": "packages/ui/src/ai-todo-list/AITodoList.tsx",
+  "url": ""
+}

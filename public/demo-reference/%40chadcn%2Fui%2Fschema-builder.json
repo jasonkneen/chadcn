@@ -1,0 +1,8 @@
+{
+  "code": "import { SchemaBuilder } from \"@chadcn/ui/schema-builder\";\n\n<SchemaBuilder onChange={(schema) => {\n  // JSON Schema subset: type, properties, required, items, string enum\n}} />",
+  "types": "export interface SchemaBuilderProps {\n  defaultFields?: SchemaField[];\n  onChange?: (schema: JSONSchema) => void;\n  className?: string;\n}\nexport type FieldType = \"string\" | \"number\" | \"boolean\" | \"integer\" | \"object\" | \"enum\";",
+  "variants": {},
+  "repository": "",
+  "path": "packages/ui/src/schema-builder/SchemaBuilder.tsx",
+  "url": ""
+}

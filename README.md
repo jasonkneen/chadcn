@@ -43,7 +43,7 @@ See the [CLI README](packages/cli/README.md) for the exact scope and options.
 ## What you can explore
 
 - **Components:** individual controls such as buttons, labels, and dropdowns.
-- **Blocks:** compositions such as login forms, dialogs, and sidebar layouts.
+- **Blocks:** compositions such as login forms, dialogs, sidebar layouts, plus authored studio blocks (AI chat bar, AI to-do list, schema builder).
 - **Apps:** complete interface demos with navigation, settings, and working local
   interactions, including a dashboard, email client, CRM, and assistant.
 - **Documentation:** library profiles, provenance, upstream links, and source references.

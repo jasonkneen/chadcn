@@ -1,0 +1,30 @@
+.studio-lab{padding:8px 4px 16px;color:#efeff1}
+.studio-lab-intro{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin-bottom:22px;flex-wrap:wrap}
+.studio-lab-eyebrow{font:11px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:1.5px;color:#a6cb82;margin:0 0 12px}
+.studio-lab-intro h2{margin:0;font-size:28px;letter-spacing:-.8px;font-weight:550;line-height:1.15}
+.studio-lab-intro p{margin:12px 0 0;color:#a2a6af;font-size:14px;line-height:1.6;max-width:460px}
+.studio-lab-stack{display:flex;flex-wrap:wrap;gap:5px}
+.studio-lab-stack span{border:1px solid #ffffff12;border-radius:5px;padding:4px 7px;font:11px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;color:#92969f;white-space:nowrap}
+.studio-lab-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.studio-lab-card{border:1px solid #ffffff16;border-radius:14px;overflow:hidden;background:#191a1e;min-width:0}
+.studio-lab-card[data-wide=true]{grid-column:1/-1}
+.studio-lab-top{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 20px}
+.studio-lab-top>div:first-child{display:flex;align-items:center;gap:12px;min-width:0}
+.studio-lab-number{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;color:#707680}
+.studio-lab-top h3{margin:0;font-size:14px;font-weight:500;color:#e0e1e7}
+.studio-lab-tools{display:flex;align-items:center;gap:10px}
+.studio-lab-tools button{display:flex;align-items:center;justify-content:center;border:0;background:none;padding:4px;color:#93969f;cursor:pointer}
+.studio-lab-tools button:hover,.studio-lab-tools button[data-active=true]{color:#c2f68b}
+.studio-lab-code{margin:0;background:#16171b;border-top:1px solid #ffffff10;padding:18px 20px;color:#c3d5a8;font-size:12px;line-height:1.8;overflow:auto}
+.studio-lab-foot{padding:16px 20px 18px}
+.studio-lab-foot p{margin:0 0 9px;font-size:13px;color:#a2a6af;line-height:1.6}
+.studio-lab-foot code{font-size:11px;color:#686e77;overflow-wrap:anywhere}
+.studio-lab .studio-stage{min-height:340px;padding:36px 18px}
+@media(max-width:760px){
+  .studio-lab-grid{grid-template-columns:1fr}
+  .studio-lab-card[data-wide=true]{grid-column:auto}
+  .studio-lab-intro{align-items:flex-start}
+  .studio-lab-intro h2{font-size:22px}
+  .studio-lab-top,.studio-lab-foot{padding-left:14px;padding-right:14px}
+  .studio-lab .studio-stage{min-height:300px;padding:24px 10px}
+}

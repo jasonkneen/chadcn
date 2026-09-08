@@ -2,13 +2,42 @@
  "$schema":"https://ui.shadcn.com/schema/registry.json",
  "name":"chadcn",
  "homepage":"http://localhost:4310",
- "items":[{
-  "name":"collection-card",
-  "type":"registry:block",
-  "title":"Collection Card",
-  "description":"A reusable composition of a shadcn Card and Kibo Spinner, imported from upstream workspace packages.",
-  "dependencies":["@chadcn/ui"],
-  "files":[],
-  "meta":{"distribution":"workspace-only","import":"@chadcn/ui/collection-card","sources":["shadcn:card","kibo:spinner"],"note":"Packages are local to this workspace and are not published to npm."}
- }]
+ "items":[
+  {
+   "name":"collection-card",
+   "type":"registry:block",
+   "title":"Collection Card",
+   "description":"A reusable composition of a shadcn Card and Kibo Spinner, imported from upstream workspace packages.",
+   "dependencies":["@chadcn/ui"],
+   "files":[],
+   "meta":{"distribution":"workspace-only","import":"@chadcn/ui/collection-card","sources":["shadcn:card","kibo:spinner"],"note":"Packages are local to this workspace and are not published to npm."}
+  },
+  {
+   "name":"ai-chat-bar",
+   "type":"registry:block",
+   "title":"AI Chat Bar",
+   "description":"A glass AI composer with modes, a showcase model menu, context chips, attachments, and a local send queue.",
+   "dependencies":["@chadcn/ui"],
+   "files":[],
+   "meta":{"distribution":"workspace-only","import":"@chadcn/ui/ai-chat-bar","sources":["shadcn:select","shadcn:dialog","shadcn:popover","shadcn:switch","shadcn:button","shadcn:tooltip"],"note":"Workspace-only composition. The model catalog is showcase data; no model API is connected."}
+  },
+  {
+   "name":"ai-todo-list",
+   "type":"registry:block",
+   "title":"AI To-do List",
+   "description":"An animated AI task list with usage details and collapse on completion.",
+   "dependencies":["@chadcn/ui"],
+   "files":[],
+   "meta":{"distribution":"workspace-only","import":"@chadcn/ui/ai-todo-list","sources":["shadcn:popover"],"note":"Packages are local to this workspace and are not published to npm."}
+  },
+  {
+   "name":"schema-builder",
+   "type":"registry:block",
+   "title":"Schema Builder",
+   "description":"A visual and JSON editor for a strict object-schema subset with two-way synchronization.",
+   "dependencies":["@chadcn/ui"],
+   "files":[],
+   "meta":{"distribution":"workspace-only","import":"@chadcn/ui/schema-builder","sources":["shadcn:tabs","shadcn:alert-dialog","shadcn:select","shadcn:button","shadcn:tooltip"],"note":"Packages are local to this workspace and are not published to npm."}
+  }
+ ]
 }
