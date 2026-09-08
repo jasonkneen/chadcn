@@ -2,8 +2,13 @@ import fs from 'node:fs';
 import path from 'node:path';
 import ts from 'typescript';
 const base='packages/upstream-shadcn-base',stylex='packages/upstream-shadcn-cssinjs';
+if(!fs.existsSync(`${base}/package.json`)||!fs.existsSync(`${stylex}/package.json`)){
+ console.warn('[assemble:stylex] skip: generated StyleX packages are not present');
+ process.exit(0);
+}
 const basePkg=JSON.parse(fs.readFileSync(`${base}/package.json`)),stylexPkg=JSON.parse(fs.readFileSync(`${stylex}/package.json`));
 const baseSource=JSON.parse(fs.readFileSync('sources.json')).sources.find(source=>source.id==='shadcn-base');
+try{const local=JSON.parse(fs.readFileSync('sources.local.json','utf8'));baseSource.path=local[baseSource.id]??baseSource.path}catch{}
 const exportsOf=file=>{const ast=ts.createSourceFile(file,fs.readFileSync(file,'utf8'),ts.ScriptTarget.Latest,true,ts.ScriptKind.JS),names=new Set();for(const node of ast.statements){if(ts.isExportDeclaration(node)&&node.exportClause&&ts.isNamedExports(node.exportClause))for(const e of node.exportClause.elements)names.add(e.name.text);if(node.modifiers?.some(m=>m.kind===ts.SyntaxKind.ExportKeyword)){if(node.name)names.add(node.name.text);if(ts.isVariableStatement(node))for(const d of node.declarationList.declarations)if(ts.isIdentifier(d.name))names.add(d.name.text)}}return names};
 const out='.generated/stylex-examples';fs.mkdirSync(out,{recursive:true});
 const entries=[],skipped=[];
@@ -25,6 +30,7 @@ for(const [key,target] of Object.entries(basePkg.exports)){
  entries.push('{'+JSON.stringify(metadata).slice(1,-1)+`,load:()=>import('../../${out}/${file}')},`);
  const sourcePath=target.replace(/^\.\/src\//,'').replace(/\.js$/,'.tsx');
  const originalPath=path.resolve(baseSource.path,baseSource.root??'',sourcePath);
+ if(!fs.existsSync(originalPath)){skipped.push({family,reason:`Original source missing at ${originalPath}`});continue}
  const referenceCode=fs.readFileSync(originalPath,'utf8').replace(/(["'])@\/registry\/bases\/base\/ui\/([^"']+)\1/g,(_match,quote,name)=>`${quote}@chadcn/upstream-shadcn-cssinjs/${name}${quote}`);
  fs.writeFileSync(`public/demo-reference/${encodeURIComponent(`chadcn:stylex-example:${family}`)}.json`,JSON.stringify({code:referenceCode,types:'',variants:{},path:sourcePath,url:`${baseSource.repository}/blob/HEAD/${baseSource.root}/${sourcePath}`}));
 }
