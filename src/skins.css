@@ -35,7 +35,9 @@ html[data-theme="neo-brutal"] .mode-toggle{border:2px solid var(--neo-line);bord
 html[data-theme="neo-brutal"] .mode-toggle button{border-radius:7px;font-weight:700}
 html[data-theme="neo-brutal"] :is(.browser-items button[aria-pressed="true"],.sidebar .nav-item.active){border:2px solid var(--neo-line);border-radius:12px;box-shadow:3px 3px 0 var(--skin-shadow);background:var(--accent);color:var(--primary-foreground)}
 html[data-theme="neo-brutal"] :is(.demo-canvas,.home-hero){background:var(--neo-stage)}
-html[data-theme="neo-brutal"] .home-hero{border-block:2px solid var(--neo-line);padding-block:72px}
+html[data-theme="neo-brutal"] .home-header{border-bottom-color:transparent}
+html[data-theme="neo-brutal"] .home-hero{width:100vw;max-width:none;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);border-top:2px solid var(--neo-line);border-bottom:2px solid var(--neo-line);padding-block:72px}
+html:is([data-theme="neo-brutal"],[data-theme="classic-brutal"]) .home-header :is(.home-nav-link,nav button){border:0!important;box-shadow:none!important;translate:none!important;transform:none!important;font-weight:500;background:transparent!important}
 html[data-theme="neo-brutal"] :is(.home-hero h1,.home-hero h1 em,.home-closing h2){font-family:var(--font-display);font-weight:900;letter-spacing:-.065em;line-height:.98}
 html[data-theme="neo-brutal"] .home-closing{background:var(--accent);color:#181818;border:3px solid #181818;border-radius:20px;box-shadow:7px 7px 0 #181818}
 html[data-theme="neo-brutal"] .home-chart span{border-radius:8px 8px 0 0}

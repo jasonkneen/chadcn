@@ -1,5 +1,9 @@
 import { NuqsAdapter } from 'nuqs/adapters/react';
 import NextPreviewRouter from './runtime/NextPreviewRouter';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import * as ReactDOMClient from 'react-dom/client';
+import * as ReactJSX from 'react/jsx-runtime';
 import { Component, lazy, Suspense, useEffect, useState, type ReactNode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { demos } from './demos/manifest';
@@ -9,6 +13,10 @@ import './demo-preview.css';
 import { Badge } from '@chadcn/upstream-shadcn/badge';
 import { Button } from '@chadcn/upstream-shadcn/button';
 import type { PreviewProps } from './ComponentReference';
+
+globalThis.React = React;
+globalThis.ReactDOM = { ...ReactDOM, ...ReactDOMClient };
+globalThis.ReactJSX = ReactJSX;
 
 function applyAppearance(theme: string, mode: string) {
   if (!themes.some(t => t.id === theme) || !['dark','light'].includes(mode)) return;

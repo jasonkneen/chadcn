@@ -49,3 +49,34 @@ for(const {key,file,url} of extraReferences){
  if(!fs.existsSync(file))continue;
  fs.writeFileSync(`public/demo-reference/${encodeURIComponent(key)}.json`,JSON.stringify({code:fs.readFileSync(file,'utf8'),types:'',variants:{},path:file,url}));
 }
+
+const studioUsages = [
+ {
+  key:'@chadcn/ui/ai-chat-bar',
+  file:'packages/ui/src/ai-chat-bar/AIChatBar.tsx',
+  code:'import { AIChatBar } from "@chadcn/ui/ai-chat-bar";\n\n<AIChatBar onSend={async (message) => {\n  // text, mode, model, context, files\n  // Connect your API here. This demo simulates processing.\n}} />',
+  types:'export interface ChatMessage {\n  text: string;\n  mode: string;\n  model: { id: string; effort: string; auto: boolean };\n  context: { kind: "Flow" | "Block" | "App"; label: string }[];\n  files: File[];\n}\nexport interface AIChatBarProps {\n  className?: string;\n  onSend?: (message: ChatMessage) => void | Promise<void>;\n  onUpgrade?: () => void;\n  showUpgrade?: boolean;\n}',
+ },
+ {
+  key:'@chadcn/ui/ai-todo-list',
+  file:'packages/ui/src/ai-todo-list/AITodoList.tsx',
+  code:'import { AITodoList } from "@chadcn/ui/ai-todo-list";\n\n<AITodoList autoPlay onComplete={() => {\n  // Local sequence finished. Remount with a new key to replay.\n}} />',
+  types:'export interface TodoTask {\n  id: string;\n  parts: { kind: "text" | "chip"; value: string }[];\n}\nexport interface AITodoListProps {\n  tasks?: TodoTask[];\n  autoPlay?: boolean;\n  onComplete?: () => void;\n  className?: string;\n}',
+ },
+ {
+  key:'@chadcn/ui/schema-builder',
+  file:'packages/ui/src/schema-builder/SchemaBuilder.tsx',
+  code:'import { SchemaBuilder } from "@chadcn/ui/schema-builder";\n\n<SchemaBuilder onChange={(schema) => {\n  // JSON Schema subset: type, properties, required, items, string enum\n}} />',
+  types:'export interface SchemaBuilderProps {\n  defaultFields?: SchemaField[];\n  onChange?: (schema: JSONSchema) => void;\n  className?: string;\n}',
+ },
+];
+for (const item of studioUsages) {
+ fs.writeFileSync(`public/demo-reference/${encodeURIComponent(item.key)}.json`, JSON.stringify({
+  code: item.code,
+  types: item.types,
+  variants: {},
+  repository: '',
+  path: item.file,
+  url: '',
+ }));
+}

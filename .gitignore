@@ -1,6 +1,7 @@
-# Dependencies and generated upstream adapters
+/public/demo-bundles/
 node_modules/
 /packages/upstream-*/
+/attachments/
 
 # Build output and local generation/cache state
 /dist/

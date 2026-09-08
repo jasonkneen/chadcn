@@ -1,0 +1,14 @@
+# Upload adapter source, not nested installs or upstream git checkouts.
+# Root `npm install` restores node_modules from package-lock.
+node_modules
+**/node_modules
+.git
+.vercel
+upstreams
+artifacts
+screenshots
+.cache
+coverage
+playwright-report
+test-results
+*.log

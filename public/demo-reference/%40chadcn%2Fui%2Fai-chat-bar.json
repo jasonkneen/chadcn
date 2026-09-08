@@ -1,0 +1,8 @@
+{
+  "code": "import { AIChatBar } from \"@chadcn/ui/ai-chat-bar\";\n\n<AIChatBar onSend={async (message) => {\n  // text, mode, model, context, files\n  // Connect your API here. This demo simulates processing.\n}} />",
+  "types": "export interface ChatMessage {\n  text: string;\n  mode: string;\n  model: { id: string; effort: string; auto: boolean };\n  context: { kind: \"Flow\" | \"Block\" | \"App\"; label: string }[];\n  files: File[];\n}\nexport interface AIChatBarProps {\n  className?: string;\n  onSend?: (message: ChatMessage) => void | Promise<void>;\n  onUpgrade?: () => void;\n  showUpgrade?: boolean;\n}",
+  "variants": {},
+  "repository": "",
+  "path": "packages/ui/src/ai-chat-bar/AIChatBar.tsx",
+  "url": ""
+}

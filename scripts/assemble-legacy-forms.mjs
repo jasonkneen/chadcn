@@ -3,7 +3,14 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const sourceRoot = path.resolve(root, '../ui/apps/v4/public/r/styles/new-york');
+const sourceRoot = [
+  path.resolve(root, 'upstreams/ui/apps/v4/public/r/styles/new-york'),
+  path.resolve(root, '../ui/apps/v4/public/r/styles/new-york'),
+].find(candidate => fs.existsSync(candidate));
+if (!sourceRoot) {
+  console.warn('[assemble:forms] skip: registry JSON not found');
+  process.exit(0);
+}
 const outputRoot = path.join(root, '.generated/legacy-forms');
 const names = ['checkbox-form-multiple', 'checkbox-form-single', 'combobox-form', 'date-picker-form', 'input-form', 'input-otp-form', 'radio-group-form', 'select-form', 'switch-form', 'textarea-form'];
 fs.mkdirSync(outputRoot, { recursive: true });

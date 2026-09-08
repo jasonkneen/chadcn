@@ -9,6 +9,8 @@ import { Checkbox } from '@chadcn/upstream-shadcn/checkbox';
 import { Switch } from '@chadcn/upstream-shadcn/switch';
 import { Progress } from '@chadcn/upstream-shadcn/progress';
 import { Badge } from '@chadcn/upstream-shadcn/badge';
+import { TooltipProvider } from '@chadcn/upstream-shadcn/tooltip';
+import { AIChatBar } from '@chadcn/ui/ai-chat-bar';
 import Appearance from './Appearance';
 import './home.css';
 
@@ -22,7 +24,7 @@ export default function HomePage({navigate}:{navigate:(section:Destination)=>voi
  const [period,setPeriod]=useState('Week');
  const [search,setSearch]=useState('');
  const [progress,setProgress]=useState(64);
- return <div className="home-page"><header className="home-header"><a className="wordmark" href="/">chadcn<span className="brand-square"/></a><nav aria-label="Browse">{(['components','blocks','apps','documentation'] as const).map(section=><Button variant="ghost" key={section} onClick={()=>navigate(section)}>{section[0].toUpperCase()+section.slice(1)}</Button>)}</nav><Appearance/></header>
+ return <div className="home-page"><header className="home-header"><div className="home-header-inner"><a className="wordmark" href="/">chadcn<span className="brand-square"/></a><nav aria-label="Browse">{(['components','blocks','apps','documentation'] as const).map(section=><button type="button" className="home-nav-link" key={section} onClick={()=>navigate(section)}>{section[0].toUpperCase()+section.slice(1)}</button>)}</nav><Appearance/></div></header>
  <main className="home-main"><section className="home-hero"><p className="eyebrow">ONE HOME FOR YOUR NEXT INTERFACE</p><h1>Good things,<br/><em>built together.</em></h1><p className="home-intro">Components, blocks, and starting points from across the ecosystem.<br className="home-break"/> Find your version. Make it yours. Build something good.</p><div className="home-actions"><Button size="lg" onClick={()=>navigate('components')}>Explore components <ArrowRight size={17}/></Button><Button size="lg" variant="outline" onClick={()=>navigate('documentation')}>Get started</Button></div><p className="home-caption">Real components below. Try them. Change the theme. See what fits.</p></section>
  <section className="home-showcase" aria-label="Interactive component showcase">
  <div className="home-column"><Card><CardHeader><CardTitle>Your building blocks</CardTitle><CardDescription>A few good defaults. Endless possibilities.</CardDescription></CardHeader><CardContent className="home-stack"><div className="home-row"><Button onClick={()=>setPressed(!pressed)}>{pressed?<><Check size={16}/>Selected</>:<>Button <ArrowRight size={16}/></>}</Button><Button variant="secondary" onClick={()=>navigate('blocks')}>Secondary</Button><Button variant="outline" onClick={()=>navigate('components')}>Outline</Button></div><Label className="home-field">Name<Input placeholder="Something worth building"/></Label><Label className="home-field">Message<Textarea placeholder="Start with an idea…"/></Label><div className="home-row home-spread"><div className="home-row"><Badge>New</Badge><Badge variant="secondary">Open source</Badge></div><Checkbox aria-label="Select example"/><Switch aria-label="Enable example"/></div></CardContent></Card>
@@ -32,5 +34,19 @@ export default function HomePage({navigate}:{navigate:(section:Destination)=>voi
  <div className="home-column"><Card><CardHeader><CardTitle>Start something new</CardTitle><CardDescription>Give your next project a place to grow.</CardDescription></CardHeader><CardContent><form className="home-stack" onSubmit={event=>{event.preventDefault();setCreated(project)}}><Label className="home-field">Project name<Input value={project} required onChange={e=>{setProject(e.target.value);setCreated('')}} placeholder="e.g. Our next great idea"/></Label><Label className="home-field">A few words about it<Textarea placeholder="What are you making?"/></Label><div className="home-row"><Checkbox id="home-private" defaultChecked/><Label htmlFor="home-private">Keep this project private</Label></div><Button type="submit">Create project <ArrowRight size={16}/></Button>{created&&<p role="status">“{created}” is ready in this preview.</p>}</form></CardContent></Card>
  <Card><CardHeader><CardTitle>Stay in the loop</CardTitle><CardDescription>Just the updates you want.</CardDescription></CardHeader><CardContent className="home-stack">{[['Product updates','New features and improvements.'],['Team activity','The things your people are building.'],['Weekly inspiration','A few things worth a look.']].map(([title,description],index)=><div key={title} className="home-notification"><div><Label htmlFor={`notice-${index}`}>{title}</Label><p>{description}</p></div><Switch id={`notice-${index}`} checked={notifications[index]} onCheckedChange={checked=>{setNotifications(values=>values.map((value,i)=>i===index?checked:value));setSaved(false)}}/></div>)}<Button variant="outline" onClick={()=>setSaved(true)}>{saved?<><Check size={16}/>Preferences saved</>:'Save preferences'}</Button></CardContent></Card>
  <Card><CardHeader><CardTitle>One step closer.</CardTitle><CardDescription>{progress}% of your weekly goal.</CardDescription></CardHeader><CardContent className="home-stack"><Progress value={progress} aria-label="Weekly goal"/><Button variant="ghost" onClick={()=>setProgress(value=>value>=100?0:Math.min(100,value+12))}>{progress>=100?'Start again':'Log a little progress'} <ArrowRight size={16}/></Button></CardContent></Card></div>
- </section><section className="home-closing"><h2>Your sources. Your style. Your next thing.</h2><p>Browse implementations from shadcn, Base UI, Radix, React Aria, Kibo, and more. Keep the versions that work for you, then compose them into something of your own.</p><Button size="lg" onClick={()=>navigate('components')}>Find your starting point <ArrowRight size={17}/></Button></section></main><footer className="home-footer"><span>chadcn — The interface library</span><Button variant="ghost" onClick={()=>navigate('documentation')}>Documentation <ArrowRight size={14}/></Button></footer></div>;
+ </section>
+ <section className="home-studio" aria-label="Studio compositions">
+  <div className="home-studio-copy">
+   <p className="eyebrow">FROM OUR STUDIO</p>
+   <h2>Small details. Fully interactive.</h2>
+   <p>Three authored compositions with working local behaviour: a glass chat bar, an animated task list, and a visual schema editor. Sending a prompt simulates processing. No model backend is connected.</p>
+   <Button onClick={()=>navigate('blocks')}>Open studio blocks <ArrowRight size={16}/></Button>
+  </div>
+  <TooltipProvider delayDuration={250}>
+   <div className="studio-stage home-studio-stage home-studio-preview" data-kind="chat">
+    <AIChatBar showUpgrade={false} onSend={async () => { await new Promise(resolve => setTimeout(resolve, 1200)); }} />
+   </div>
+  </TooltipProvider>
+ </section>
+ <section className="home-closing"><h2>Your sources. Your style. Your next thing.</h2><p>Browse implementations from shadcn, Base UI, Radix, React Aria, Kibo, and more. Keep the versions that work for you, then compose them into something of your own.</p><Button size="lg" onClick={()=>navigate('components')}>Find your starting point <ArrowRight size={17}/></Button></section></main><footer className="home-footer"><span>chadcn — The interface library</span><Button variant="ghost" onClick={()=>navigate('documentation')}>Documentation <ArrowRight size={14}/></Button></footer></div>;
 }
